@@ -34,6 +34,9 @@
             "config": ".cz-config.cjs"
         }
     },
+    "overrides": {
+        "@conventional-changelog/git-client": "^2.5.1"
+    },
     "dependencies": {
         "@tailwindcss/vite": "4.1.16",
         "clsx": "^2.1.1",
