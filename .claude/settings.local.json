@@ -1,6 +1,6 @@
 {
 	"permissions": {
-		"allow": ["Bash(npm run build:*)", "Bash(npm run build:css:*)"],
+		"allow": ["Bash(npm run build:*)", "Bash(npm run build:css:*)", "Bash(npm run format:*)", "Bash(npm run tsc:*)"],
 		"deny": [],
 		"ask": []
 	}
