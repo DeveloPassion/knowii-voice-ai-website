@@ -40,7 +40,7 @@ const HomePage: React.FC = () => {
 
 					{/* Hero Video */}
 					<div className="flex justify-center">
-						<div className="relative aspect-video w-full max-w-3xl overflow-hidden rounded-lg shadow-2xl">
+						<div className="relative aspect-video w-full max-w-3xl overflow-hidden rounded-lg shadow-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl">
 							<iframe
 								src="https://www.youtube.com/embed/Z3nnUCJRWhI"
 								title="Knowii Voice AI Demo"
@@ -91,7 +91,7 @@ const HomePage: React.FC = () => {
 								You speak at 150 words per minute.
 							</p>
 							<p className="mt-4 text-xl text-primary/90">
-								That"s nearly{' '}
+								That's nearly{' '}
 								<span className="text-secondary">4x</span>{' '}
 								faster.
 							</p>
@@ -124,7 +124,7 @@ const HomePage: React.FC = () => {
 							You speak, naturally, like you're talking to a
 							friend: "Hey Alexis. Thanks for reaching out about
 							this. I've been thinking about the same thing, and
-							here"s what I think we should do..."
+							here's what I think we should do..."
 						</p>
 						<p>You release the keys.</p>
 						<p>
@@ -158,7 +158,13 @@ const HomePage: React.FC = () => {
 					</h2>
 					<p className="mb-6 text-center text-xl">
 						It's called{' '}
-						<span className="text-secondary">Knowii Voice AI</span>.
+						<a
+							href="https://developassion.gumroad.com/l/knowii-voice-ai"
+							className="font-semibold text-primary hover:underline"
+						>
+							Knowii Voice AI
+						</a>
+						.
 					</p>
 					<p className="mb-8 text-center text-lg text-primary/80">
 						It's a voice-to-text application that runs entirely on
@@ -222,38 +228,38 @@ const HomePage: React.FC = () => {
 			</Section>
 
 			{/* Screenshots Section */}
-			<Section className="lg:!max-w-[1400px] xl:!max-w-[1600px]">
+			<Section className="lg:!max-w-[1600px] xl:!max-w-[1800px] 2xl:!max-w-[2000px]">
 				<div>
 					<h2 className="mb-12 text-center text-3xl font-bold sm:mb-14 sm:text-4xl md:mb-16 md:text-5xl lg:mb-20">
 						See It In Action
 					</h2>
-					<div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-10 xl:gap-12">
-						<div className="overflow-hidden rounded-lg shadow-xl lg:shadow-2xl">
+					<div className="grid grid-cols-1 gap-8 xl:grid-cols-2 xl:gap-16">
+						<div className="overflow-hidden rounded-lg shadow-xl transition-transform hover:scale-[1.02] lg:shadow-2xl">
 							<img
 								src="/assets/screenshots/2025-11-03-settings-general.png"
 								alt="Knowii Voice AI Settings"
-								className="h-full w-full object-cover"
+								className="h-full w-full object-contain"
 							/>
 						</div>
-						<div className="overflow-hidden rounded-lg shadow-xl lg:shadow-2xl">
+						<div className="overflow-hidden rounded-lg shadow-xl transition-transform hover:scale-[1.02] lg:shadow-2xl">
 							<img
 								src="/assets/screenshots/2025-11-03-model-selection.png"
 								alt="Model Selection"
-								className="h-full w-full object-cover"
+								className="h-full w-full object-contain"
 							/>
 						</div>
-						<div className="overflow-hidden rounded-lg shadow-xl lg:shadow-2xl">
+						<div className="overflow-hidden rounded-lg shadow-xl transition-transform hover:scale-[1.02] lg:shadow-2xl">
 							<img
 								src="/assets/screenshots/2025-11-03-history.png"
 								alt="Transcription History"
-								className="h-full w-full object-cover"
+								className="h-full w-full object-contain"
 							/>
 						</div>
-						<div className="overflow-hidden rounded-lg shadow-xl lg:shadow-2xl">
+						<div className="overflow-hidden rounded-lg shadow-xl transition-transform hover:scale-[1.02] lg:shadow-2xl">
 							<img
 								src="/assets/screenshots/2025-11-03-onboarding.png"
 								alt="Onboarding"
-								className="h-full w-full object-cover"
+								className="h-full w-full object-contain"
 							/>
 						</div>
 					</div>
@@ -263,13 +269,13 @@ const HomePage: React.FC = () => {
 			{/* What Makes This Different */}
 			<Section id="features" className="bg-background/50">
 				<div>
-					<h2 className="mb-12 text-center text-3xl font-bold sm:mb-14 sm:text-4xl md:mb-16 md:text-5xl lg:mb-20">
+					<h2 className="mb-8 text-center text-3xl font-bold sm:mb-10 sm:text-4xl md:mb-12 md:text-5xl">
 						What Makes This Different
 					</h2>
 
-					<div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-						<div className="rounded-lg bg-background/80 p-6">
-							<h3 className="mb-3 text-2xl font-bold text-secondary">
+					<div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6">
+						<div className="rounded-lg bg-background/80 p-4 sm:p-5 md:p-6">
+							<h3 className="mb-2 text-xl font-bold text-secondary sm:text-2xl">
 								You actually own it
 							</h3>
 							<p className="text-primary/80">
@@ -279,8 +285,8 @@ const HomePage: React.FC = () => {
 							</p>
 						</div>
 
-						<div className="rounded-lg bg-background/80 p-6">
-							<h3 className="mb-3 text-2xl font-bold text-secondary">
+						<div className="rounded-lg bg-background/80 p-4 sm:p-5 md:p-6">
+							<h3 className="mb-2 text-xl font-bold text-secondary sm:text-2xl">
 								It works in every app
 							</h3>
 							<p className="text-primary/80">
@@ -290,8 +296,8 @@ const HomePage: React.FC = () => {
 							</p>
 						</div>
 
-						<div className="rounded-lg bg-background/80 p-6">
-							<h3 className="mb-3 text-2xl font-bold text-secondary">
+						<div className="rounded-lg bg-background/80 p-4 sm:p-5 md:p-6">
+							<h3 className="mb-2 text-xl font-bold text-secondary sm:text-2xl">
 								Your data stays yours
 							</h3>
 							<p className="text-primary/80">
@@ -303,8 +309,8 @@ const HomePage: React.FC = () => {
 							</p>
 						</div>
 
-						<div className="rounded-lg bg-background/80 p-6">
-							<h3 className="mb-3 text-2xl font-bold text-secondary">
+						<div className="rounded-lg bg-background/80 p-4 sm:p-5 md:p-6">
+							<h3 className="mb-2 text-xl font-bold text-secondary sm:text-2xl">
 								You control which AI model
 							</h3>
 							<p className="text-primary/80">
@@ -315,8 +321,8 @@ const HomePage: React.FC = () => {
 							</p>
 						</div>
 
-						<div className="rounded-lg bg-background/80 p-6">
-							<h3 className="mb-3 text-2xl font-bold text-secondary">
+						<div className="rounded-lg bg-background/80 p-4 sm:p-5 md:p-6">
+							<h3 className="mb-2 text-xl font-bold text-secondary sm:text-2xl">
 								You can see everything you've ever said
 							</h3>
 							<p className="text-primary/80">
@@ -332,8 +338,8 @@ const HomePage: React.FC = () => {
 							</p>
 						</div>
 
-						<div className="rounded-lg bg-background/80 p-6">
-							<h3 className="mb-3 text-2xl font-bold text-secondary">
+						<div className="rounded-lg bg-background/80 p-4 sm:p-5 md:p-6">
+							<h3 className="mb-2 text-xl font-bold text-secondary sm:text-2xl">
 								Various supported languages
 							</h3>
 							<p className="text-primary/80">
@@ -700,7 +706,7 @@ const HomePage: React.FC = () => {
 									href="https://www.dsebastien.net/about"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="font-semibold text-secondary hover:underline"
+									className="font-semibold text-primary hover:underline"
 								>
 									Sébastien Dubois
 								</a>
@@ -721,7 +727,7 @@ const HomePage: React.FC = () => {
 									href="https://knowii.net"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="text-secondary hover:underline"
+									className="text-primary hover:underline"
 								>
 									Knowii Community
 								</a>
@@ -739,7 +745,7 @@ const HomePage: React.FC = () => {
 									href="https://obsidianstarterkit.com"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="text-secondary hover:underline"
+									className="text-primary hover:underline"
 								>
 									Obsidian Starter Kit
 								</a>
@@ -748,7 +754,7 @@ const HomePage: React.FC = () => {
 									href="https://store.dsebastien.net/l/knowledge-worker-kit"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="text-secondary hover:underline"
+									className="text-primary hover:underline"
 								>
 									Knowledge Worker Kit
 								</a>
@@ -925,7 +931,7 @@ const HomePage: React.FC = () => {
 						{[
 							{
 								q: 'Is this actually private?',
-								a: 'Yes. Everything runs on your computer. Your voice recordings are stored locally. The AI model runs locally. Nothing is sent to any server. You can run it with your internet connection disabled and it works perfectly.'
+								a: 'Yes. Everything runs on your computer. Your voice recordings are stored locally. The AI model runs locally. Nothing is sent to any server. You can run it with your internet connection disabled and it works perfectly. Support will be added for remote/cloud-based AI models, but the default will always be local-first.'
 							},
 							{
 								q: 'Does it work offline?',
@@ -937,7 +943,7 @@ const HomePage: React.FC = () => {
 							},
 							{
 								q: 'What languages are supported?',
-								a: 'All major languages: English, Spanish, French, German, Italian, Portuguese, Dutch, Russian, Chinese, Japanese, Korean, and many more. You select your language in settings.'
+								a: 'All major languages: English, Spanish, French, German, Italian, Portuguese, Dutch, Russian, Chinese, Japanese, Korean, and many more. You select your language in settings. Note that different models support different languages. Some also have specific variants for certain languages.'
 							},
 							{
 								q: 'Will this work on my computer?',
