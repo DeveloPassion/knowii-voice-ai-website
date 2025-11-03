@@ -1,4 +1,6 @@
-module.exports = {
+import type { UserConfig } from '@commitlint/types'
+
+const config: UserConfig = {
 	extends: ['@commitlint/config-conventional'],
 	rules: {
 		'header-max-length': [1, 'always', 100],
@@ -30,3 +32,5 @@ module.exports = {
 		'scope-case': [2, 'always', 'lowercase']
 	}
 }
+
+export default config

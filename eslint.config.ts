@@ -3,8 +3,9 @@ import pluginJs from '@eslint/js'
 import tseslint from 'typescript-eslint'
 import pluginReact from 'eslint-plugin-react'
 import eslintConfigPrettier from 'eslint-config-prettier'
+import type { Linter } from 'eslint'
 
-export default [
+const config: Linter.Config[] = [
 	{ files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
 	{
 		ignores: ['**/dist/**']
@@ -26,8 +27,8 @@ export default [
 			}
 		}
 	},
-	pluginReact.configs.flat.recommended,
-	eslintConfigPrettier,
+	pluginReact.configs.flat.recommended as Linter.Config,
+	eslintConfigPrettier as Linter.Config,
 	{
 		rules: {
 			'react/react-in-jsx-scope': 'off',
@@ -43,3 +44,5 @@ export default [
 		}
 	}
 ]
+
+export default config
