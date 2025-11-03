@@ -1,56 +1,56 @@
 {
-	"compilerOptions": {
-		"target": "ES2020",
-		"useDefineForClassFields": true,
-		"module": "ESNext",
-		"lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "compilerOptions": {
+        "target": "ES2020",
+        "useDefineForClassFields": true,
+        "module": "ESNext",
+        "lib": ["ES2020", "DOM", "DOM.Iterable"],
 
-		// Module Resolution
-		"moduleResolution": "bundler",
-		"allowImportingTsExtensions": false,
-		"resolveJsonModule": true,
-		"isolatedModules": true,
-		"esModuleInterop": true,
-		"resolvePackageJsonImports": true,
+        // Module Resolution
+        "moduleResolution": "bundler",
+        "allowImportingTsExtensions": false,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "resolvePackageJsonImports": true,
 
-		// Emit
-		"noEmit": true,
-		"skipLibCheck": true,
-		"jsx": "react-jsx",
+        // Emit
+        "noEmit": true,
+        "skipLibCheck": true,
+        "jsx": "react-jsx",
 
-		// Strict Type-Checking Options (Super Strict Mode)
-		"strict": true,
-		"forceConsistentCasingInFileNames": true,
+        // Strict Type-Checking Options (Super Strict Mode)
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
 
-		"noImplicitAny": true,
-		"strictNullChecks": true,
-		"strictFunctionTypes": true,
-		"strictBindCallApply": true,
-		"strictPropertyInitialization": true,
-		"noImplicitThis": true,
-		"alwaysStrict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictBindCallApply": true,
+        "strictPropertyInitialization": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
 
-		// Additional Strict Checks
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"noImplicitReturns": true,
-		"noFallthroughCasesInSwitch": true,
-		"noUncheckedIndexedAccess": true,
-		"noImplicitOverride": true,
-		"noPropertyAccessFromIndexSignature": true,
-		"allowUnusedLabels": false,
-		"allowUnreachableCode": false,
+        // Additional Strict Checks
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedIndexedAccess": true,
+        "noImplicitOverride": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "allowUnusedLabels": false,
+        "allowUnreachableCode": false,
 
-		// Code Quality
-		"noEmitOnError": true,
-		"allowJs": false,
-		"checkJs": false,
+        // Code Quality
+        "noEmitOnError": true,
+        "allowJs": false,
+        "checkJs": false,
 
-		/* Shadcn UI */
-		"baseUrl": ".",
-		"paths": {
-			"@/*": ["./src/*"]
-		}
-	},
-	"include": ["src", "vite.config.ts"]
+        /* Shadcn UI */
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./src/*"]
+        }
+    },
+    "include": ["src", "vite.config.ts"]
 }

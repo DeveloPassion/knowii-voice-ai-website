@@ -11,22 +11,19 @@ import TermsOfUsePage from './pages/terms-of-use'
 const rootElement = document.getElementById('root')
 
 if (!rootElement) {
-	throw new Error('Root element not found')
+    throw new Error('Root element not found')
 }
 
 ReactDOM.createRoot(rootElement).render(
-	<React.StrictMode>
-		<BrowserRouter>
-			<Routes>
-				<Route element={<AppLayout />}>
-					<Route path="/" element={<HomePage />} />
-					<Route
-						path="/privacy-policy"
-						element={<PrivacyPolicyPage />}
-					/>
-					<Route path="/terms-of-use" element={<TermsOfUsePage />} />
-				</Route>
-			</Routes>
-		</BrowserRouter>
-	</React.StrictMode>
+    <React.StrictMode>
+        <BrowserRouter>
+            <Routes>
+                <Route element={<AppLayout />}>
+                    <Route path='/' element={<HomePage />} />
+                    <Route path='/privacy-policy' element={<PrivacyPolicyPage />} />
+                    <Route path='/terms-of-use' element={<TermsOfUsePage />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
+    </React.StrictMode>
 )
