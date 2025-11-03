@@ -193,11 +193,12 @@ See the main application's versioning documentation. This website follows a simp
     - Content must never be cut off or require horizontal scrolling
 - **Color Scheme**:
     - Primary: #FFFFFF (white text)
-    - Secondary: #FF1493 (vivid pink for CTAs and accents)
+    - Secondary: #E5007D (pink for buttons and backgrounds)
+    - Secondary Text: #FF1493 (vivid pink for text links and accents)
     - Background: #37404C (dark gray background)
 - **Typography**: Noto Sans font family from Google Fonts
-- **CTAs**: Use the secondary pink color, make them prominent and clear
-- **Images**: All images stored in `src/assets/images/` and `src/assets/screenshots/`
+- **CTAs**: Use the secondary pink color (#E5007D), make them prominent and clear
+- **Images**: All images stored in `public/assets/images/` and `public/assets/screenshots/`
 
 ## Coding conventions
 
