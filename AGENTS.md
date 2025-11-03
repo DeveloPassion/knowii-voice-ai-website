@@ -138,7 +138,7 @@ npm run lint
 - Pages live in `src/pages/`
 - Layout components in `src/components/layout/`
 - Reusable UI components in `src/components/ui/`
-- Assets (images, screenshots) in `src/assets/`
+- **Static assets (images, screenshots) in `public/assets/`** - NOT in `src/`
 
 ## Deployment
 
@@ -193,7 +193,7 @@ See the main application's versioning documentation. This website follows a simp
     - Content must never be cut off or require horizontal scrolling
 - **Color Scheme**:
     - Primary: #FFFFFF (white text)
-    - Secondary: #E5007D (pink for CTAs and accents)
+    - Secondary: #FF1493 (vivid pink for CTAs and accents)
     - Background: #37404C (dark gray background)
 - **Typography**: Noto Sans font family from Google Fonts
 - **CTAs**: Use the secondary pink color, make them prominent and clear
