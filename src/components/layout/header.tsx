@@ -28,9 +28,11 @@ const Header: React.FC = () => {
 					</div>
 
 					{/* CTA Button */}
-					<CTAButton href="https://store.dsebastien.net/l/knowii-voice-ai">
+					<CTAButton href="https://developassion.gumroad.com/l/knowii-voice-ai">
 						<FaShoppingCart className="inline md:mr-2" />
-						<span className="hidden md:inline">Get it now - $49</span>
+						<span className="hidden md:inline">
+							Get it now - $49
+						</span>
 					</CTAButton>
 				</div>
 			</nav>

@@ -21,7 +21,7 @@ const HomePage: React.FC = () => {
 					</p>
 					<div className="mb-16 flex flex-col items-center gap-6 sm:mb-20 lg:mb-24">
 						<CTAButton
-							href="https://store.dsebastien.net/l/knowii-voice-ai"
+							href="https://developassion.gumroad.com/l/knowii-voice-ai"
 							size="large"
 						>
 							Get it now - $49
@@ -411,10 +411,10 @@ const HomePage: React.FC = () => {
 			{/* What's Included */}
 			<Section>
 				<div id="pricing">
-					<h2 className="mb-12 text-center text-3xl font-bold sm:mb-14 sm:text-4xl md:mb-16 md:text-5xl lg:mb-20">
+					<h2 className="mb-8 text-center text-3xl font-bold sm:mb-10 sm:text-4xl md:mb-12 md:text-5xl">
 						What's Included
 					</h2>
-					<div className="space-y-8 sm:space-y-10">
+					<div className="space-y-4 sm:space-y-5 md:space-y-6">
 						{[
 							{
 								title: 'Full access to Knowii Voice AI',
@@ -444,14 +444,14 @@ const HomePage: React.FC = () => {
 						].map((item, index) => (
 							<div
 								key={index}
-								className="flex items-start gap-4 rounded-lg bg-background/50 p-6"
+								className="flex items-start gap-3 rounded-lg bg-background/50 p-4 sm:gap-4 sm:p-5 md:p-6"
 							>
-								<FaCheckCircle className="mt-1 shrink-0 text-2xl text-secondary" />
+								<FaCheckCircle className="mt-0.5 shrink-0 text-xl text-secondary sm:text-2xl" />
 								<div>
-									<h3 className="mb-2 text-xl font-bold">
+									<h3 className="mb-1.5 text-lg font-bold sm:text-xl">
 										{item.title}
 									</h3>
-									<p className="text-primary/80">
+									<p className="text-sm text-primary/80 sm:text-base">
 										{item.description}
 									</p>
 								</div>
@@ -459,7 +459,7 @@ const HomePage: React.FC = () => {
 						))}
 					</div>
 
-					<div className="mt-12 rounded-lg bg-secondary/10 p-8 text-center">
+					<div className="mt-8 rounded-lg bg-secondary/10 p-6 text-center sm:mt-10 sm:p-8">
 						<p className="mb-4 text-3xl font-bold">$49, once</p>
 						<p className="mb-2 text-lg text-primary/80">
 							Not $49 per month.
@@ -537,10 +537,10 @@ const HomePage: React.FC = () => {
 			{/* FAQ */}
 			<Section>
 				<div>
-					<h2 className="mb-12 text-center text-3xl font-bold sm:mb-14 sm:text-4xl md:mb-16 md:text-5xl lg:mb-20">
+					<h2 className="mb-8 text-center text-3xl font-bold sm:mb-10 sm:text-4xl md:mb-12 md:text-5xl">
 						Common Questions
 					</h2>
-					<div className="space-y-8 sm:space-y-10">
+					<div className="space-y-4 sm:space-y-5 md:space-y-6">
 						{[
 							{
 								q: 'Is this actually private?',
@@ -577,12 +577,14 @@ const HomePage: React.FC = () => {
 						].map((item, index) => (
 							<div
 								key={index}
-								className="rounded-lg bg-background/50 p-6"
+								className="rounded-lg bg-background/50 p-4 sm:p-5 md:p-6"
 							>
-								<h3 className="mb-3 text-xl font-bold">
+								<h3 className="mb-2 text-lg font-bold sm:text-xl">
 									{item.q}
 								</h3>
-								<p className="text-primary/80">{item.a}</p>
+								<p className="text-sm text-primary/80 sm:text-base">
+									{item.a}
+								</p>
 							</div>
 						))}
 					</div>
@@ -619,7 +621,7 @@ const HomePage: React.FC = () => {
 
 					<div className="mb-6">
 						<CTAButton
-							href="https://store.dsebastien.net/l/knowii-voice-ai"
+							href="https://developassion.gumroad.com/l/knowii-voice-ai"
 							size="large"
 						>
 							Get Knowii Voice AI - $49
