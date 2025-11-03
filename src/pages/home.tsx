@@ -151,7 +151,7 @@ const HomePage: React.FC = () => {
 			</Section>
 
 			{/* This Already Exists */}
-			<Section id="how-it-works" className="bg-background/50">
+			<Section className="bg-background/50">
 				<div>
 					<h2 className="mb-10 text-center text-3xl font-bold sm:mb-12 sm:text-4xl md:mb-14 md:text-5xl lg:mb-16">
 						This Already Exists

@@ -4,15 +4,18 @@ interface SectionProps {
 	children: React.ReactNode
 	className?: string
 	fullWidth?: boolean
+	id?: string
 }
 
 const Section: React.FC<SectionProps> = ({
 	children,
 	className,
-	fullWidth = false
+	fullWidth = false,
+	id
 }) => {
 	return (
 		<section
+			id={id}
 			className={cn(
 				'py-12 sm:py-14 md:py-16 lg:py-20 xg:py-24 xl:py-28',
 				!fullWidth &&

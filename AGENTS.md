@@ -44,6 +44,28 @@ The `documentation/Sales Copy.md` file contains the complete sales copy that dri
 
 This project uses a **strict TypeScript configuration**. Always ensure your code compiles without errors.
 
+#### Watch Mode (Recommended for Development)
+
+**ALWAYS run TypeScript in watch mode in the background when working on this project:**
+
+```bash
+npm run tsc:watch
+```
+
+This runs `tsc --noEmit --watch` which:
+
+- Continuously monitors TypeScript files for changes
+- Automatically type checks on every save
+- Provides immediate feedback on compilation errors
+- Does NOT generate output files
+- Keeps running in the background
+
+**Benefits:**
+
+- Catch type errors immediately as you code
+- No need to manually run type checks after each change
+- Faster feedback loop
+
 #### Quick Type Check
 
 Use this to verify code compiles correctly without building:
