@@ -144,12 +144,35 @@ npm run lint
 
 The website is automatically deployed to GitHub Pages on every push to the `main` branch via GitHub Actions.
 
+### Static Assets
+
+**IMPORTANT**: The `public/` folder contains static assets (images, icons, screenshots) that must be committed to the repository.
+
+- **Location**: `public/assets/`
+- **Purpose**: Static assets that Vite copies to `dist/` during build
+- **Must be in git**: The `public/` folder is NOT in `.gitignore` and must be committed
+- **Why**: GitHub Actions needs these assets during the build process
+
+During the Vite build:
+
+1. Vite copies contents of `public/` to `dist/` (via `publicDir: '../public'` in vite.config.ts)
+2. Assets are then available in the deployed site at `/assets/...` paths
+
+**When adding new assets:**
+
+1. Place them in `public/assets/images/` or `public/assets/screenshots/`
+2. Reference them in code as `/assets/images/filename.ext`
+3. Commit the files to git
+4. They will be deployed automatically
+
 ### Deployment Process
 
 1. Push to `main` branch
 2. GitHub Actions workflow builds the site (`npm run build`)
-3. Workflow copies `dist/` to `public/`
-4. Workflow deploys `public/` to GitHub Pages
+    - Vite copies `public/` contents to `dist/`
+    - Vite processes and bundles the application code
+3. Workflow copies `dist/` to a temporary `public/` for deployment artifact
+4. Workflow deploys the artifact to GitHub Pages
 5. Site is available at https://voice-ai.knowii.net
 
 ### Manual Deployment
