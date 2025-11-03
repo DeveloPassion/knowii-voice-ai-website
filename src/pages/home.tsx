@@ -15,9 +15,16 @@ const HomePage: React.FC = () => {
 						Press. Speak. Release. Your words appear exactly where
 						you need them.
 					</p>
-					<p className="mb-10 text-lg text-primary/70 sm:mb-12 sm:text-xl lg:mb-14">
+					<p className="mb-6 text-lg text-primary/70 sm:mb-8 sm:text-xl">
 						Works in every app. Runs on your computer. Costs $49,
 						one time.
+					</p>
+					<p className="mb-10 text-lg font-semibold text-primary/90 sm:mb-12 lg:mb-14">
+						No cloud. No subscription. Just your voice and your
+						computer.
+					</p>
+					<p className="mb-8 text-base text-primary/70 sm:mb-10 sm:text-lg">
+						Join other early adopters who've already ditched typing
 					</p>
 					<div className="mb-16 flex flex-col items-center gap-6 sm:mb-20 lg:mb-24">
 						<CTAButton
@@ -307,6 +314,34 @@ const HomePage: React.FC = () => {
 								technical content. Switch anytime.
 							</p>
 						</div>
+
+						<div className="rounded-lg bg-background/80 p-6">
+							<h3 className="mb-3 text-2xl font-bold text-secondary">
+								You can see everything you've ever said
+							</h3>
+							<p className="text-primary/80">
+								Every transcription is saved and searchable.
+								Need to find that thing you said three weeks
+								ago? Search for it. It's not just a
+								transcription tool. It's external memory you can
+								rely on. Want to copy an old transcription
+								again? Double-click it. Need to make edits?
+								Delete audio files but keep the text. Don't want
+								to save transcriptions? Just disable the
+								feature.
+							</p>
+						</div>
+
+						<div className="rounded-lg bg-background/80 p-6">
+							<h3 className="mb-3 text-2xl font-bold text-secondary">
+								Various supported languages
+							</h3>
+							<p className="text-primary/80">
+								Many languages are supported by different
+								voice-to-text AI models and you can speak in one
+								language and get transcriptions in another.
+							</p>
+						</div>
 					</div>
 				</div>
 			</Section>
@@ -479,6 +514,171 @@ const HomePage: React.FC = () => {
 				</div>
 			</Section>
 
+			{/* What's Coming */}
+			<Section className="bg-background/50">
+				<div>
+					<h2 className="mb-8 text-center text-3xl font-bold sm:mb-10 sm:text-4xl md:mb-12 md:text-5xl">
+						What's Coming (Included In Your Purchase)
+					</h2>
+					<p className="mb-8 text-center text-lg text-primary/80">
+						I'm actively building this. Here's what's next:
+					</p>
+					<div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+						{[
+							{
+								title: 'Linux support',
+								description:
+									'Full feature parity for Linux users'
+							},
+							{
+								title: 'macOS support',
+								description: 'Full feature parity for Mac users'
+							},
+							{
+								title: 'Support for more AI models',
+								description:
+									'More AI models will be added for local and remote transcription and post-processing'
+							},
+							{
+								title: 'Smart AI-enabled post-processing',
+								description:
+									'Apply custom transformations to your transcriptions: remove filler words, fix commonly misrecognized words, use AI. Configure AI-enabled pipelines, detect applications/context and go from raw transcriptions to specialized outputs'
+							},
+							{
+								title: 'Live transcription',
+								description:
+									'See words appear in real-time as you speak, not after you finish'
+							},
+							{
+								title: 'Voice Trigger Words/Phrases',
+								description:
+									'Keyboard-less mode where a trigger word or phrase initiates recording and transcription'
+							},
+							{
+								title: 'Voice Commands & Action System',
+								description:
+									'Use your voice to trigger concrete actions'
+							},
+							{
+								title: 'Cross-Device Command & Control',
+								description:
+									'Use the app on one device to command other ones'
+							},
+							{
+								title: 'Mute/Pause Media while recording',
+								description:
+									"Disable noise while you're recording to get the best possible transcriptions"
+							},
+							{
+								title: 'File transcription',
+								description:
+									'Drag and drop audio files (meeting recordings, interviews, podcasts) to transcribe them'
+							},
+							{
+								title: 'Internationalization',
+								description:
+									'Deeper support for translations. Different keyboard shortcuts that transcribe in different languages'
+							},
+							{
+								title: 'Auto update system',
+								description:
+									'Receive new versions automatically'
+							},
+							{
+								title: 'Portable Version',
+								description:
+									'Uncompress. Run. Transcribe. Everything stored in one folder'
+							},
+							{
+								title: 'CLI and API',
+								description:
+									'Integrate Knowii Voice AI with other applications and systems'
+							},
+							{
+								title: 'Usage Statistics',
+								description: 'Get statistics about your usage'
+							}
+						].map((item, index) => (
+							<div
+								key={index}
+								className="rounded-lg border border-primary/10 bg-background/50 p-4 sm:p-5"
+							>
+								<h3 className="mb-2 text-lg font-bold text-secondary">
+									{item.title}
+								</h3>
+								<p className="text-sm text-primary/70">
+									{item.description}
+								</p>
+							</div>
+						))}
+					</div>
+					<p className="mt-8 text-center text-lg font-semibold text-primary">
+						All of this, and everything else I build for Knowii
+						Voice AI, is included in your purchase. No upgrade fees.
+					</p>
+				</div>
+			</Section>
+
+			{/* How It Actually Works */}
+			<Section>
+				<div>
+					<h2 className="mb-8 text-center text-3xl font-bold sm:mb-10 sm:text-4xl md:mb-12 md:text-5xl">
+						How It Actually Works (Technical Details)
+					</h2>
+					<div className="space-y-6 text-lg text-primary/80">
+						<p>
+							Knowii Voice AI uses state-of-the-art speech
+							recognition AI models such as{' '}
+							<strong>Whisper</strong> and{' '}
+							<strong>Parakeet</strong>. The same technology that
+							powers professional transcription services, but
+							running locally on your computer.
+						</p>
+						<p>
+							You download the model once (2-10 GB depending on
+							which model you choose).
+						</p>
+						<p>
+							When you record your voice, the audio stays on your
+							computer and gets transcribed by the local AI model
+							running on your computer. No Internet required. No
+							cloud API. No sending your data anywhere.
+						</p>
+						<p>
+							If your computer has an NVIDIA GPU, transcription is
+							accelerated and near-instant. If you're on CPU-only,
+							it takes a few seconds. Still fast enough to be
+							useful.
+						</p>
+						<div className="rounded-lg bg-background/50 p-6">
+							<p className="mb-4 font-semibold">
+								You can choose between multiple models based on
+								your priorities:
+							</p>
+							<ul className="ml-6 list-disc space-y-2">
+								<li>
+									<strong>Small models</strong> - Fast,
+									near-instant results, good accuracy
+								</li>
+								<li>
+									<strong>Medium models</strong> - Balanced
+									speed and accuracy
+								</li>
+								<li>
+									<strong>Large models</strong> - Slower but
+									more accurate, great for technical content
+									or accents
+								</li>
+							</ul>
+						</div>
+						<p>
+							Switch between them anytime. The app manages loading
+							and unloading automatically.
+						</p>
+					</div>
+				</div>
+			</Section>
+
 			{/* About the Creator */}
 			<Section className="bg-background/50">
 				<div>
@@ -508,7 +708,15 @@ const HomePage: React.FC = () => {
 								Architect, and Author with 20+ years in IT.
 							</p>
 							<p>
-								I founded{' '}
+								I've been a software developer, technical lead,
+								solution architect, and CTO. I wrote and
+								published multiple books (e.g., Learn TypeScript
+								by Building Web Applications, Dev Concepts) and
+								various tools for knowledge workers.
+							</p>
+							<p>
+								I founded DeveloPassion back in 2019 and created
+								the{' '}
 								<a
 									href="https://knowii.net"
 									target="_blank"
@@ -517,19 +725,192 @@ const HomePage: React.FC = () => {
 								>
 									Knowii Community
 								</a>
-								, helping thousands of professionals break free
-								from information overload.
+								, a community of practice helping thousands of
+								professionals break free from information
+								overload.
 							</p>
 							<p>
 								My mission is simple: help knowledge workers
 								achieve clarity with systems that actually work.
 							</p>
 							<p>
-								I'm not VC-backed. I"m just an independent maker
-								building tools that respect users instead of
-								extracting from them.
+								I've built the{' '}
+								<a
+									href="https://obsidianstarterkit.com"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text-secondary hover:underline"
+								>
+									Obsidian Starter Kit
+								</a>
+								, the{' '}
+								<a
+									href="https://store.dsebastien.net/l/knowledge-worker-kit"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text-secondary hover:underline"
+								>
+									Knowledge Worker Kit
+								</a>
+								, taught courses on Personal Knowledge
+								Management, and created tools that help people
+								organize, capture, and leverage their knowledge
+								effectively.
+							</p>
+							<p>
+								I work ~50% on entrepreneurship and ~50% as an
+								employee. I'm not VC-backed. I"m just an
+								independent maker building tools that respect
+								users instead of extracting from them.
 							</p>
 						</div>
+					</div>
+				</div>
+			</Section>
+
+			{/* Why I Built This */}
+			<Section>
+				<div>
+					<h2 className="mb-8 text-center text-3xl font-bold sm:mb-10 sm:text-4xl md:mb-12 md:text-5xl">
+						Why I Built This
+					</h2>
+					<div className="space-y-6 text-lg text-primary/80">
+						<p>
+							I tried every voice-to-text tool out there. Cloud
+							services that cost $20/month. Browser extensions
+							that only work in Chrome. Mobile apps that don't
+							talk to my computer.
+						</p>
+						<p>They all had the same problems:</p>
+						<ul className="ml-6 list-disc space-y-2">
+							<li>
+								They sent my voice to someone else's servers
+							</li>
+							<li>They cost money forever</li>
+							<li>They had usage limits</li>
+							<li>They only worked in specific apps</li>
+						</ul>
+						<p className="font-semibold text-primary">
+							I wanted something different.
+						</p>
+						<div className="space-y-2">
+							<p>Something that respects privacy.</p>
+							<p>Something I could own, not rent.</p>
+							<p>Something that works everywhere.</p>
+							<p>
+								Something that supported state-of-the-art AI
+								models.
+							</p>
+							<p>
+								Something that worked seamlessly across
+								applications.
+							</p>
+							<p>
+								Something I could leverage to better leverage
+								AI.
+							</p>
+						</div>
+						<p className="text-xl font-semibold text-secondary">
+							I couldn't find it. So I built Knowii Voice AI.
+						</p>
+						<p>
+							Knowii Voice AI is what I wanted to exist in the
+							world.
+						</p>
+						<p>
+							Privacy-first. Runs entirely on your computer. Pay
+							once, own it forever. Works in literally every
+							application.
+						</p>
+						<p>
+							As a knowledge worker myself, I know how crucial
+							speed and efficiency are. The keyboard is the
+							biggest bottleneck between your thoughts and getting
+							things done. Voice is the answer — but only if it's
+							private, reliable, and actually works everywhere you
+							need it.
+						</p>
+						<p>
+							This tool is part of a growing ecosystem I'm
+							building around the Knowii Community. It's designed
+							to integrate with everything else I create — tools
+							and services that work together to help you capture,
+							organize, and leverage knowledge more effectively.
+						</p>
+						<p>
+							If you've been frustrated by the same things, this
+							is for you.
+						</p>
+						<p>
+							If building systems that respect users instead of
+							extracting from them resonates with you, I'd love
+							for you to try it and support my work.
+						</p>
+						<p className="text-right text-xl font-semibold">
+							— Sébastien
+						</p>
+					</div>
+				</div>
+			</Section>
+
+			{/* Get Started */}
+			<Section className="bg-background/50">
+				<div>
+					<h2 className="mb-8 text-center text-3xl font-bold sm:mb-10 sm:text-4xl md:mb-12 md:text-5xl">
+						Get Started in 5 Minutes
+					</h2>
+					<div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+						<div className="text-center">
+							<div className="mb-4 flex justify-center">
+								<div className="flex h-16 w-16 items-center justify-center rounded-full bg-secondary text-2xl font-bold text-white">
+									1
+								</div>
+							</div>
+							<h3 className="mb-3 text-xl font-bold">
+								Purchase, download and install
+							</h3>
+							<p className="text-primary/80">
+								Buy on Gumroad, get instant access. Download.
+								Install in 60 seconds.
+							</p>
+						</div>
+						<div className="text-center">
+							<div className="mb-4 flex justify-center">
+								<div className="flex h-16 w-16 items-center justify-center rounded-full bg-secondary text-2xl font-bold text-white">
+									2
+								</div>
+							</div>
+							<h3 className="mb-3 text-xl font-bold">
+								Quick setup
+							</h3>
+							<p className="text-primary/80">
+								Open the app. Pick your language. Choose an AI
+								model. Download it (one time, 2-10 GB).
+							</p>
+						</div>
+						<div className="text-center">
+							<div className="mb-4 flex justify-center">
+								<div className="flex h-16 w-16 items-center justify-center rounded-full bg-secondary text-2xl font-bold text-white">
+									3
+								</div>
+							</div>
+							<h3 className="mb-3 text-xl font-bold">
+								Press Ctrl+Space and speak
+							</h3>
+							<p className="text-primary/80">
+								Press Ctrl+Space anywhere. Speak. Release. Done.
+							</p>
+						</div>
+					</div>
+					<div className="mt-8 text-center">
+						<p className="mb-4 text-lg text-primary/80">
+							No account creation. No registration. No complex
+							setup.
+						</p>
+						<p className="text-xl font-semibold text-secondary">
+							You're transcribing your voice in under 5 minutes
+							from purchase.
+						</p>
 					</div>
 				</div>
 			</Section>
@@ -573,6 +954,34 @@ const HomePage: React.FC = () => {
 							{
 								q: 'Will the price increase?',
 								a: 'Yes. This is Early Access pricing. When the product leaves beta, the price will go up. Buy now to lock in lifetime access at this price.'
+							},
+							{
+								q: 'How accurate is it?',
+								a: "Very. Whisper and Parakeet are among the best free speech recognition models available today. Accuracy depends on audio quality, background noise, and which model you use. Larger models are more accurate but slower. In practice, it's accurate enough for daily use without constant corrections."
+							},
+							{
+								q: 'What microphone do I need?',
+								a: "Whatever you already have. Built-in laptop mics work. USB mics work. Headset mics work. Better microphones produce better results, but you don't need to buy anything special."
+							},
+							{
+								q: 'What about my clipboard?',
+								a: "The app saves your clipboard before pasting, then restores it after. Your copied content isn't lost."
+							},
+							{
+								q: 'What if I have problems?',
+								a: "Email me. I'll help. If something's broken, I'll do my best to fix it. If something's confusing, I'll explain it. You're not alone."
+							},
+							{
+								q: "What's the catch with Early Access?",
+								a: "There's no catch. The product works now. I'm calling it Early Access because I'm actively building new features based on user feedback. You get to help shape what gets built next, and you get the lowest price it will ever be."
+							},
+							{
+								q: "What's your refund policy?",
+								a: "30-day money-back guarantee. If you don't like it, email me and I'll refund you. No argument, no hassle."
+							},
+							{
+								q: 'How does this relate to your other products and services?',
+								a: "Knowii Voice AI is part of a growing ecosystem of tools and services I'm building around the Knowii Community (https://www.store.dsebastien.net/l/knowii). This is how I build: interconnected systems that amplify the way you think and work. Voice AI helps you capture thoughts faster. The Knowii Community helps you organize and leverage that knowledge. The Knowledge Worker Kit (https://store.dsebastien.net/l/knowledge-worker-kit) gives you the frameworks to use it all effectively."
 							}
 						].map((item, index) => (
 							<div
