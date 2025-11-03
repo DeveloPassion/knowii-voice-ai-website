@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
 							<img
 								src="/assets/images/logo.svg"
 								alt="Knowii Voice AI"
-								className="h-8"
+								className="h-10 sm:h-12 md:h-14 lg:h-16 xl:h-20"
 							/>
 						</Link>
 						<p className="text-sm text-primary/70">
