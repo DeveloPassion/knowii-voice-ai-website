@@ -181,7 +181,7 @@ If needed, you can trigger deployment manually from the GitHub Actions tab.
 
 ## Versioning & releases
 
-See the main application's versioning documentation. This website follows a simpler versioning scheme and doesn't require formal releases for every change.
+Doesn't require formal releases for every change.
 
 ## UI, UX & copy guidelines
 

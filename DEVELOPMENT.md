@@ -112,7 +112,6 @@ knowii-voice-ai-website/
 ├── prettier.config.js        # Prettier configuration
 ├── tsconfig.json             # TypeScript configuration
 ├── tsconfig.node.json        # TypeScript config for build tools
-├── VERSION                   # Version file
 └── vite.config.ts            # Vite configuration
 ```
 
@@ -193,30 +192,9 @@ Every push to `main` automatically deploys to GitHub Pages via GitHub Actions.
 
 Trigger deployment manually from the GitHub Actions tab if needed.
 
-## Versioning & Releases
+## Releases
 
-### Version Management
-
-The project uses `release-it` for version management:
-
-```bash
-# Release a new version (prompts for version bump)
-npm run release
-
-# Release pre-release versions
-npm run release:alpha
-npm run release:beta
-npm run release:rc
-```
-
-### What Happens During Release
-
-1. Bumps version in `package.json`
-2. Updates `VERSION` file
-3. Generates/updates `CHANGELOG.md`
-4. Creates a git commit and tag
-5. Pushes to GitHub
-6. Creates a GitHub release
+None
 
 ## Troubleshooting
 
