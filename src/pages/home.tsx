@@ -426,8 +426,22 @@ const HomePage: React.FC = () => {
                         {[
                             {
                                 title: 'Full access to Knowii Voice AI',
-                                description:
-                                    'The Windows version is available immediately. Buy your copy. Download today. Use it immediately. Linux and macOS versions coming soon.'
+                                description: (
+                                    <>
+                                        The Windows version is available immediately. Buy your copy.
+                                        Download today. Use it immediately. Linux and macOS versions
+                                        coming soon. See{' '}
+                                        <a
+                                            href='https://docs.voice-ai.knowii.net/user-guide/installation#system-requirements'
+                                            target='_blank'
+                                            rel='noopener noreferrer'
+                                            className='text-primary font-semibold hover:underline'
+                                        >
+                                            system requirements
+                                        </a>{' '}
+                                        for details.
+                                    </>
+                                )
                             },
                             {
                                 title: 'Lifetime updates',
