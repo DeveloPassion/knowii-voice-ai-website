@@ -37,6 +37,26 @@ const Footer: React.FC = () => {
                                 </a>
                             </li>
                             <li>
+                                <a
+                                    href='https://docs.voice-ai.knowii.net/'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    className='text-primary/70 hover:text-secondary transition-colors'
+                                >
+                                    Documentation
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href='https://docs.voice-ai.knowii.net/'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    className='text-primary/70 hover:text-secondary transition-colors'
+                                >
+                                    Roadmap
+                                </a>
+                            </li>
+                            <li>
                                 <Link
                                     to='/privacy-policy'
                                     className='text-primary/70 hover:text-secondary transition-colors'

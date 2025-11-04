@@ -414,8 +414,20 @@ const HomePage: React.FC = () => {
                             },
                             {
                                 title: 'All future features',
-                                description:
-                                    'Everything on the roadmap is included in your $49 purchase.'
+                                description: (
+                                    <>
+                                        Everything on the{' '}
+                                        <a
+                                            href='https://docs.voice-ai.knowii.net/'
+                                            target='_blank'
+                                            rel='noopener noreferrer'
+                                            className='text-primary font-semibold hover:underline'
+                                        >
+                                            roadmap
+                                        </a>{' '}
+                                        is included in your $49 purchase.
+                                    </>
+                                )
                             },
                             {
                                 title: 'Direct support from an actual human',
