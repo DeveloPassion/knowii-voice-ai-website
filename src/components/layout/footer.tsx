@@ -81,10 +81,10 @@ const Footer: React.FC = () => {
                         <ul className='space-y-2 text-sm'>
                             <li>
                                 <a
-                                    href='mailto:support@knowii.net'
+                                    href='https://docs.voice-ai.knowii.net/support'
                                     className='text-primary/70 hover:text-secondary transition-colors'
                                 >
-                                    support@knowii.net
+                                    Support page
                                 </a>
                             </li>
                         </ul>
