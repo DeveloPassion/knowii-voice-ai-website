@@ -1,7 +1,7 @@
 import Section from '@/components/ui/section'
 
 const TermsOfUsePage: React.FC = () => {
-    const lastUpdated = 'November 3, 2025'
+    const lastUpdated = 'November 4, 2025'
 
     return (
         <div className=''>
@@ -13,12 +13,48 @@ const TermsOfUsePage: React.FC = () => {
                     <div className='text-primary/80 space-y-8'>
                         <section>
                             <h2 className='text-primary mb-4 text-2xl font-bold'>
+                                Service Provider
+                            </h2>
+                            <p className='mb-4'>Knowii Voice AI is provided by:</p>
+                            <div className='bg-background/50 rounded-lg p-4'>
+                                <p className='font-semibold'>DeveloPassion SRL</p>
+                                <p>126 route de Mons</p>
+                                <p>7130 Binche, Belgium</p>
+                                <p>VAT: BE0717 561 755</p>
+                                <p className='mt-2'>
+                                    Represented by: Sébastien Dubois
+                                    <br />
+                                    Email:{' '}
+                                    <a
+                                        href='mailto:support@knowii.net'
+                                        className='text-secondary hover:underline'
+                                    >
+                                        support@knowii.net
+                                    </a>
+                                </p>
+                            </div>
+                        </section>
+
+                        <section>
+                            <h2 className='text-primary mb-4 text-2xl font-bold'>
                                 Agreement to Terms
                             </h2>
-                            <p>
+                            <p className='mb-4'>
                                 By purchasing, downloading, or using Knowii Voice AI, you agree to
                                 be bound by these Terms of Use. If you do not agree to these terms,
                                 do not use the application.
+                            </p>
+                            <p>
+                                These terms are in addition to and incorporate{' '}
+                                <a
+                                    href='https://developassion.be/terms/'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    className='text-secondary hover:underline'
+                                >
+                                    DeveloPassion's general Terms and Conditions
+                                </a>
+                                , which also apply to your use of Knowii Voice AI.
                             </p>
                         </section>
 
@@ -155,11 +191,12 @@ const TermsOfUsePage: React.FC = () => {
                                 Limitation of Liability
                             </h2>
                             <p className='mb-4'>
-                                To the maximum extent permitted by applicable law, Sébastien Dubois
-                                and Knowii shall not be liable for any indirect, incidental,
-                                special, consequential, or punitive damages, or any loss of profits
-                                or revenues, whether incurred directly or indirectly, or any loss of
-                                data, use, goodwill, or other intangible losses resulting from:
+                                To the maximum extent permitted by applicable law, DeveloPassion
+                                SRL, Sébastien Dubois, and Knowii shall not be liable for any
+                                indirect, incidental, special, consequential, or punitive damages,
+                                or any loss of profits or revenues, whether incurred directly or
+                                indirectly, or any loss of data, use, goodwill, or other intangible
+                                losses resulting from:
                             </p>
                             <ul className='ml-6 list-disc space-y-2'>
                                 <li>Your use or inability to use the application</li>
@@ -170,8 +207,8 @@ const TermsOfUsePage: React.FC = () => {
                                 <li>Any bugs, viruses, or harmful code in the application</li>
                             </ul>
                             <p className='mt-4'>
-                                In no event shall our total liability exceed the amount you paid for
-                                the license ($49).
+                                In no event shall DeveloPassion SRL's total liability exceed the
+                                amount you paid for the license ($49 as of 2025-11-04).
                             </p>
                         </section>
 
@@ -278,10 +315,18 @@ const TermsOfUsePage: React.FC = () => {
                             <h2 className='text-primary mb-4 text-2xl font-bold'>
                                 Entire Agreement
                             </h2>
-                            <p>
-                                These Terms of Use, together with our Privacy Policy, constitute the
-                                entire agreement between you and us regarding the use of Knowii
-                                Voice AI.
+                            <p className='mb-4'>
+                                These Terms of Use, together with our Privacy Policy and{' '}
+                                <a
+                                    href='https://developassion.be/terms/'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    className='text-secondary hover:underline'
+                                >
+                                    DeveloPassion's Terms and Conditions
+                                </a>
+                                , constitute the entire agreement between you and us regarding the
+                                use of Knowii Voice AI.
                             </p>
                         </section>
 
@@ -292,15 +337,22 @@ const TermsOfUsePage: React.FC = () => {
                             <p className='mb-4'>
                                 If you have questions about these Terms of Use, please contact us:
                             </p>
-                            <p>
-                                Email:{' '}
-                                <a
-                                    href='mailto:support@knowii.net'
-                                    className='text-secondary hover:underline'
-                                >
-                                    support@knowii.net
-                                </a>
-                            </p>
+                            <div className='bg-background/50 rounded-lg p-4'>
+                                <p className='font-semibold'>DeveloPassion SRL</p>
+                                <p>126 route de Mons, 7130 Binche, Belgium</p>
+                                <p>VAT: BE0717 561 755</p>
+                                <p className='mt-2'>
+                                    Represented by: Sébastien Dubois
+                                    <br />
+                                    Email:{' '}
+                                    <a
+                                        href='mailto:support@knowii.net'
+                                        className='text-secondary hover:underline'
+                                    >
+                                        support@knowii.net
+                                    </a>
+                                </p>
+                            </div>
                         </section>
 
                         <section className='bg-secondary/10 rounded-lg p-6'>
@@ -308,16 +360,16 @@ const TermsOfUsePage: React.FC = () => {
                                 In Plain English
                             </h2>
                             <p className='mb-4 text-lg'>
-                                You buy it once for $49. You own it forever. Use it for whatever you
-                                want-personal projects, commercial work, client deliverables. You
+                                You buy it once. You own it forever. Use it for whatever you
+                                want—personal projects, commercial work, client deliverables. You
                                 can't resell it or share your license with others who haven't paid.
                                 We'll keep improving it and you get all updates free. If you don't
                                 like it within 30 days, we'll refund you.
                             </p>
                             <p className='text-lg'>
-                                AI transcription isn't perfect-accuracy depends on your audio
+                                AI transcription isn't perfect—accuracy depends on your audio
                                 quality and setup. Always review important transcriptions. We're not
-                                liable if something goes wrong-the app is provided as-is.
+                                liable if something goes wrong—the app is provided as-is.
                             </p>
                         </section>
                     </div>
