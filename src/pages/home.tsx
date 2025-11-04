@@ -880,7 +880,24 @@ const HomePage: React.FC = () => {
                             },
                             {
                                 q: 'Will this work on my computer?',
-                                a: "If you're running Windows 10/11, yes. macOS and Linux support are coming. You don't need a powerful computer, but GPU acceleration helps (NVIDIA CUDA)."
+                                a: (
+                                    <>
+                                        If you're running Windows 10/11, yes. System requirements:
+                                        4GB RAM minimum (8GB+ recommended), 500MB free disk space.
+                                        Optional: NVIDIA GPU with CUDA support for faster
+                                        transcription. macOS and Linux support are coming soon. For
+                                        detailed requirements, see the{' '}
+                                        <a
+                                            href='https://docs.voice-ai.knowii.net/user-guide/installation#system-requirements'
+                                            target='_blank'
+                                            rel='noopener noreferrer'
+                                            className='text-primary font-semibold hover:underline'
+                                        >
+                                            System Requirements
+                                        </a>{' '}
+                                        in the documentation.
+                                    </>
+                                )
                             },
                             {
                                 q: 'Can I customize the keyboard shortcut?',
