@@ -238,68 +238,90 @@ const HomePage: React.FC = () => {
                     <div className='grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6'>
                         <div className='bg-background/80 rounded-lg p-4 sm:p-5 md:p-6'>
                             <h3 className='text-secondary mb-2 text-xl font-bold sm:text-2xl'>
-                                You actually own it
+                                Privacy First
                             </h3>
                             <p className='text-primary/80'>
-                                Pay $49 once. Own it forever. Every update, every new feature,
-                                included. No subscription. No usage caps. No "premium tier."
+                                All processing happens locally by default. No cloud required. Your
+                                data stays on your device. No internet needed after the initial AI
+                                model download. Your voice recordings are processed on your
+                                computer. Nothing leaves your machine unless you want to.
                             </p>
                         </div>
 
                         <div className='bg-background/80 rounded-lg p-4 sm:p-5 md:p-6'>
                             <h3 className='text-secondary mb-2 text-xl font-bold sm:text-2xl'>
-                                It works in every app
+                                You Actually Own It
                             </h3>
                             <p className='text-primary/80'>
+                                Pay once, own it forever. Every update, every new feature included.
+                                No subscription. No usage caps. No "premium tier."
+                            </p>
+                        </div>
+
+                        <div className='bg-background/80 rounded-lg p-4 sm:p-5 md:p-6'>
+                            <h3 className='text-secondary mb-2 text-xl font-bold sm:text-2xl'>
+                                Works Everywhere
+                            </h3>
+                            <p className='text-primary/80'>
+                                Transcribe into every single application - emails, documents, chat,
+                                notes, browsers, IDEs. If you can type there, you can speak there.
                                 Not just Google Docs. Not just Chrome. Every. Single. Application.
-                                If you can put your cursor there and type, you can speak there
-                                instead.
                             </p>
                         </div>
 
                         <div className='bg-background/80 rounded-lg p-4 sm:p-5 md:p-6'>
                             <h3 className='text-secondary mb-2 text-xl font-bold sm:text-2xl'>
-                                Your data stays yours
+                                Simple to Use
                             </h3>
                             <p className='text-primary/80'>
-                                The AI models run on your computer by default. Your voice recordings
-                                are processed locally. Nothing leaves your machine unless you want
-                                to. No internet required after you download the AI model once.
+                                Press and hold a shortcut key to record, release to transcribe and
+                                paste. That's it! Works exactly where your cursor is. No complex
+                                setup, no learning curve.
                             </p>
                         </div>
 
                         <div className='bg-background/80 rounded-lg p-4 sm:p-5 md:p-6'>
                             <h3 className='text-secondary mb-2 text-xl font-bold sm:text-2xl'>
-                                You control which AI model
+                                Fast & Accurate
                             </h3>
                             <p className='text-primary/80'>
-                                Multiple models supported. Download a small and fast model if you
-                                want near-instant results. Download a larger and more accurate one
-                                for technical content. Switch anytime.
+                                Powered by state-of-the-art AI models (Whisper, Parakeet) with GPU
+                                acceleration support. Get near-instant transcriptions with
+                                remarkable accuracy.
                             </p>
                         </div>
 
                         <div className='bg-background/80 rounded-lg p-4 sm:p-5 md:p-6'>
                             <h3 className='text-secondary mb-2 text-xl font-bold sm:text-2xl'>
-                                You can see everything you've ever said
+                                Multiple AI Models
                             </h3>
                             <p className='text-primary/80'>
-                                Every transcription is saved and searchable. Need to find that thing
-                                you said three weeks ago? Search for it. It's not just a
-                                transcription tool. It's external memory you can rely on. Want to
-                                copy an old transcription again? Double-click it. Need to make
-                                edits? Delete audio files but keep the text. Don't want to save
+                                Choose between small and fast models or larger and more accurate
+                                ones. Switch anytime based on your needs. Download a small model for
+                                near-instant results or a larger one for technical content.
+                            </p>
+                        </div>
+
+                        <div className='bg-background/80 rounded-lg p-4 sm:p-5 md:p-6'>
+                            <h3 className='text-secondary mb-2 text-xl font-bold sm:text-2xl'>
+                                Searchable History
+                            </h3>
+                            <p className='text-primary/80'>
+                                Every transcription is saved and searchable. Your external memory.
+                                Find anything you said weeks ago in seconds. Want to copy an old
+                                transcription again? Double-click it. Don't want to save
                                 transcriptions? Just disable the feature.
                             </p>
                         </div>
 
                         <div className='bg-background/80 rounded-lg p-4 sm:p-5 md:p-6'>
                             <h3 className='text-secondary mb-2 text-xl font-bold sm:text-2xl'>
-                                Various supported languages
+                                Multi-Language Support
                             </h3>
                             <p className='text-primary/80'>
-                                Many languages are supported by different voice-to-text AI models
-                                and you can speak in one language and get transcriptions in another.
+                                Many languages supported. Speak in one language and get
+                                transcriptions in another. Different AI models support different
+                                languages and capabilities.
                             </p>
                         </div>
                     </div>
