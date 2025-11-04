@@ -781,7 +781,16 @@ const HomePage: React.FC = () => {
                                 Purchase, download and install
                             </h3>
                             <p className='text-primary/80'>
-                                Buy on Gumroad, get instant access. Download. Install in 60 seconds.
+                                Buy and get instant access. Download from your{' '}
+                                <a
+                                    href='https://gumroad.com/library'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    className='text-primary font-semibold hover:underline'
+                                >
+                                    Gumroad library
+                                </a>{' '}
+                                or the Knowii Community. Install in 60 seconds.
                             </p>
                         </div>
                         <div className='text-center'>
@@ -827,6 +836,10 @@ const HomePage: React.FC = () => {
                     </h2>
                     <div className='space-y-4 sm:space-y-5 md:space-y-6'>
                         {[
+                            {
+                                q: 'How do I download the app after purchase?',
+                                a: "After purchase, you can download Knowii Voice AI from your Gumroad library (https://gumroad.com/library) if you purchased via Gumroad, or from the Knowii Community if you purchased there. You'll receive immediate access to the download link after completing your purchase."
+                            },
                             {
                                 q: 'Is this actually private?',
                                 a: 'Yes. Everything runs on your computer. Your voice recordings are stored locally. The AI model runs locally. Nothing is sent to any server. You can run it with your internet connection disabled and it works perfectly. Support will be added for remote/cloud-based AI models, but the default will always be local-first.'
