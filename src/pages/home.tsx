@@ -1002,7 +1002,7 @@ const HomePage: React.FC = () => {
                             <FaWindows className='text-lg' />
                             <span>Windows 10/11 version available now</span>
                         </div>
-                        <p>Linux and macOS coming soon</p>
+                        <p>Linux and macOS coming later</p>
                         <p>30-day money-back guarantee • Lifetime updates included</p>
                         <p className='text-xs'>Secure checkout via Gumroad</p>
                     </div>
