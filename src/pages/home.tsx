@@ -293,12 +293,13 @@ const HomePage: React.FC = () => {
 
                         <div className='bg-background/80 rounded-lg p-4 sm:p-5 md:p-6'>
                             <h3 className='text-secondary mb-2 text-xl font-bold sm:text-2xl'>
-                                Multiple AI Models
+                                10 AI Models. Your Choice.
                             </h3>
                             <p className='text-primary/80'>
-                                Choose between small and fast models or larger and more accurate
-                                ones. Switch anytime based on your needs. Download a small model for
-                                near-instant results or a larger one for technical content.
+                                Need instant results? Use a tiny model. Need perfect accuracy? Use a
+                                large one. English-only? There's a faster model for that. 99
+                                languages? Covered. Switch between models in seconds based on what
+                                you're doing right now.
                             </p>
                         </div>
 
@@ -634,19 +635,23 @@ const HomePage: React.FC = () => {
                         </p>
                         <div className='bg-background/50 rounded-lg p-6'>
                             <p className='mb-4 font-semibold'>
-                                You can choose between multiple models based on your priorities:
+                                10 models. Pick what matters most right now:
                             </p>
                             <ul className='ml-6 list-disc space-y-2'>
                                 <li>
-                                    <strong>Small models</strong> - Fast, near-instant results, good
+                                    <strong>Tiny models</strong> - Lightning fast, instant results
+                                </li>
+                                <li>
+                                    <strong>Small/Medium models</strong> - Best balance of speed and
                                     accuracy
                                 </li>
                                 <li>
-                                    <strong>Medium models</strong> - Balanced speed and accuracy
+                                    <strong>Large models</strong> - Maximum accuracy for technical
+                                    content
                                 </li>
                                 <li>
-                                    <strong>Large models</strong> - Slower but more accurate, great
-                                    for technical content or accents
+                                    <strong>English-only variants</strong> - Optimized for English,
+                                    even faster
                                 </li>
                             </ul>
                         </div>
@@ -890,7 +895,7 @@ const HomePage: React.FC = () => {
                             },
                             {
                                 q: 'What languages are supported?',
-                                a: 'All major languages: English, Spanish, French, German, Italian, Portuguese, Dutch, Russian, Chinese, Japanese, Korean, and many more. You select your language in settings. Note that different models support different languages. Some also have specific variants for certain languages.'
+                                a: 'Depends on the model. Multi-language Whisper models support 99 languages. Parakeet supports 25 European languages. English-only Whisper variants are optimized specifically for English and run faster. Pick the model that matches what you need.'
                             },
                             {
                                 q: 'Will this work on my computer?',
