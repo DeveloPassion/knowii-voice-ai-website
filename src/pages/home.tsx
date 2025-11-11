@@ -138,6 +138,7 @@ const HomePage: React.FC = () => {
                         <a
                             href='https://developassion.gumroad.com/l/knowii-voice-ai'
                             className='text-primary font-semibold hover:underline'
+                            data-gumroad-overlay-checkout='true'
                         >
                             Knowii Voice AI
                         </a>

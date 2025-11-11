@@ -17,6 +17,7 @@ const CTAButton: React.FC<CTAButtonProps> = ({ href, children, className, size =
     return (
         <a
             href={href}
+            data-gumroad-overlay-checkout='true'
             className={cn(
                 'bg-secondary hover:bg-secondary/90 hover:shadow-secondary/30 inline-block rounded-lg font-bold text-white transition-all hover:shadow-xl',
                 sizeClasses[size],
