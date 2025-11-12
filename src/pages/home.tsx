@@ -137,7 +137,7 @@ const HomePage: React.FC = () => {
                         It's called{' '}
                         <a
                             href='https://developassion.gumroad.com/l/knowii-voice-ai'
-                            className='text-primary font-semibold hover:underline'
+                            className='text-secondary font-semibold transition-all hover:underline hover:opacity-80'
                             data-gumroad-overlay-checkout='true'
                         >
                             Knowii Voice AI
@@ -437,7 +437,7 @@ const HomePage: React.FC = () => {
                                             href='https://docs.voice-ai.knowii.net/user-guide/installation#system-requirements'
                                             target='_blank'
                                             rel='noopener noreferrer'
-                                            className='text-primary font-semibold hover:underline'
+                                            className='text-secondary font-semibold transition-all hover:underline hover:opacity-80'
                                         >
                                             system requirements
                                         </a>{' '}
@@ -472,7 +472,7 @@ const HomePage: React.FC = () => {
                                             href='https://docs.voice-ai.knowii.net/roadmap'
                                             target='_blank'
                                             rel='noopener noreferrer'
-                                            className='text-primary font-semibold hover:underline'
+                                            className='text-secondary font-semibold transition-all hover:underline hover:opacity-80'
                                         >
                                             roadmap
                                         </a>{' '}
@@ -694,7 +694,7 @@ const HomePage: React.FC = () => {
                                     href='https://www.dsebastien.net/about'
                                     target='_blank'
                                     rel='noopener noreferrer'
-                                    className='text-primary font-semibold hover:underline'
+                                    className='text-secondary font-semibold transition-all hover:underline hover:opacity-80'
                                 >
                                     Sébastien Dubois
                                 </a>
@@ -713,7 +713,7 @@ const HomePage: React.FC = () => {
                                     href='https://knowii.net'
                                     target='_blank'
                                     rel='noopener noreferrer'
-                                    className='text-primary hover:underline'
+                                    className='text-secondary font-semibold transition-all hover:underline hover:opacity-80'
                                 >
                                     Knowii Community
                                 </a>
@@ -730,7 +730,7 @@ const HomePage: React.FC = () => {
                                     href='https://obsidianstarterkit.com'
                                     target='_blank'
                                     rel='noopener noreferrer'
-                                    className='text-primary hover:underline'
+                                    className='text-secondary font-semibold transition-all hover:underline hover:opacity-80'
                                 >
                                     Obsidian Starter Kit
                                 </a>
@@ -739,7 +739,7 @@ const HomePage: React.FC = () => {
                                     href='https://store.dsebastien.net/l/knowledge-worker-kit'
                                     target='_blank'
                                     rel='noopener noreferrer'
-                                    className='text-primary hover:underline'
+                                    className='text-secondary font-semibold transition-all hover:underline hover:opacity-80'
                                 >
                                     Knowledge Worker Kit
                                 </a>
@@ -837,7 +837,7 @@ const HomePage: React.FC = () => {
                                     href='https://gumroad.com/library'
                                     target='_blank'
                                     rel='noopener noreferrer'
-                                    className='text-primary font-semibold hover:underline'
+                                    className='text-secondary font-semibold transition-all hover:underline hover:opacity-80'
                                 >
                                     Gumroad library
                                 </a>{' '}
@@ -920,7 +920,7 @@ const HomePage: React.FC = () => {
                                             href='https://docs.voice-ai.knowii.net/user-guide/installation#system-requirements'
                                             target='_blank'
                                             rel='noopener noreferrer'
-                                            className='text-primary font-semibold hover:underline'
+                                            className='text-secondary font-semibold transition-all hover:underline hover:opacity-80'
                                         >
                                             System Requirements
                                         </a>{' '}
