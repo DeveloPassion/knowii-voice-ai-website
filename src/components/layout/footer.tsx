@@ -48,12 +48,22 @@ const Footer: React.FC = () => {
                             </li>
                             <li>
                                 <a
-                                    href='https://docs.voice-ai.knowii.net/'
+                                    href='https://docs.voice-ai.knowii.net/roadmap'
                                     target='_blank'
                                     rel='noopener noreferrer'
                                     className='text-primary/70 hover:text-secondary transition-colors'
                                 >
                                     Roadmap
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href='https://docs.voice-ai.knowii.net/release-notes'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    className='text-primary/70 hover:text-secondary transition-colors'
+                                >
+                                    Release Notes
                                 </a>
                             </li>
                             <li>

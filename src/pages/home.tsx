@@ -447,8 +447,21 @@ const HomePage: React.FC = () => {
                             },
                             {
                                 title: 'Lifetime updates',
-                                description:
-                                    'Every new feature, every improvement, every bug fix. Forever. No additional charges.'
+                                description: (
+                                    <>
+                                        Every new feature, every improvement, every bug fix.
+                                        Forever. No additional charges. Check the{' '}
+                                        <a
+                                            href='https://docs.voice-ai.knowii.net/release-notes'
+                                            target='_blank'
+                                            rel='noopener noreferrer'
+                                            className='text-secondary font-semibold transition-all hover:underline hover:opacity-80'
+                                        >
+                                            release notes
+                                        </a>{' '}
+                                        to see what's new.
+                                    </>
+                                )
                             },
                             {
                                 title: 'All future features',
@@ -456,7 +469,7 @@ const HomePage: React.FC = () => {
                                     <>
                                         Everything on the{' '}
                                         <a
-                                            href='https://docs.voice-ai.knowii.net/'
+                                            href='https://docs.voice-ai.knowii.net/roadmap'
                                             target='_blank'
                                             rel='noopener noreferrer'
                                             className='text-primary font-semibold hover:underline'
@@ -569,10 +582,6 @@ const HomePage: React.FC = () => {
                                 title: 'Internationalization',
                                 description:
                                     'Deeper support for translations. Different keyboard shortcuts that transcribe in different languages'
-                            },
-                            {
-                                title: 'Auto update system',
-                                description: 'Receive new versions automatically'
                             },
                             {
                                 title: 'Portable Version',
