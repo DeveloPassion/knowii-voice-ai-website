@@ -286,21 +286,22 @@ const HomePage: React.FC = () => {
                                 Fast & Accurate
                             </h3>
                             <p className='text-primary/80'>
-                                Powered by state-of-the-art AI models (Whisper, Parakeet) with GPU
-                                acceleration support. Get near-instant transcriptions with
+                                Powered by state-of-the-art AI models (Whisper, Parakeet, Moonshine)
+                                with GPU acceleration support. Get near-instant transcriptions with
                                 remarkable accuracy.
                             </p>
                         </div>
 
                         <div className='bg-background/80 rounded-lg p-4 sm:p-5 md:p-6'>
                             <h3 className='text-secondary mb-2 text-xl font-bold sm:text-2xl'>
-                                10 AI Models. Your Choice.
+                                Many AI Models. Your Choice.
                             </h3>
                             <p className='text-primary/80'>
                                 Need instant results? Use a tiny model. Need perfect accuracy? Use a
                                 large one. English-only? There's a faster model for that. 99
-                                languages? Covered. Switch between models in seconds based on what
-                                you're doing right now.
+                                languages? Covered. Low-end hardware? Moonshine models work great
+                                with minimal resources. Switch between models in seconds based on
+                                what you're doing right now.
                             </p>
                         </div>
 
@@ -625,13 +626,13 @@ const HomePage: React.FC = () => {
                     <div className='text-primary/80 space-y-6 text-lg'>
                         <p>
                             Knowii Voice AI uses state-of-the-art speech recognition AI models such
-                            as <strong>Whisper</strong> and <strong>Parakeet</strong>. The same
-                            technology that powers professional transcription services, but running
-                            locally on your computer.
+                            as <strong>Whisper</strong>, <strong>Parakeet</strong>, and{' '}
+                            <strong>Moonshine</strong>. The same technology that powers professional
+                            transcription services, but running locally on your computer.
                         </p>
                         <p>
-                            You download the model once (2-10 GB depending on which model you
-                            choose).
+                            You download the model once (100 MB to 10 GB depending on which model
+                            you choose).
                         </p>
                         <p>
                             When you record your voice, the audio stays on your computer and gets
@@ -645,7 +646,7 @@ const HomePage: React.FC = () => {
                         </p>
                         <div className='bg-background/50 rounded-lg p-6'>
                             <p className='mb-4 font-semibold'>
-                                10 models. Pick what matters most right now:
+                                Many models to choose from. Pick what matters most right now:
                             </p>
                             <ul className='ml-6 list-disc space-y-2'>
                                 <li>
@@ -662,6 +663,11 @@ const HomePage: React.FC = () => {
                                 <li>
                                     <strong>English-only variants</strong> - Optimized for English,
                                     even faster
+                                </li>
+                                <li>
+                                    <strong>Moonshine models</strong> - Ultra-lightweight, perfect
+                                    for low-end hardware (Arabic, Chinese, Japanese, Korean,
+                                    Ukrainian, Vietnamese)
                                 </li>
                             </ul>
                         </div>
@@ -853,7 +859,7 @@ const HomePage: React.FC = () => {
                             <h3 className='mb-3 text-xl font-bold'>Quick setup</h3>
                             <p className='text-primary/80'>
                                 Open the app. Pick your language. Choose an AI model. Download it
-                                (one time, 2-10 GB).
+                                (one time, 100 MB to 10 GB).
                             </p>
                         </div>
                         <div className='text-center'>
@@ -897,7 +903,7 @@ const HomePage: React.FC = () => {
                             },
                             {
                                 q: 'Does it work offline?',
-                                a: 'Yes. After you download the AI model once (2-10 GB depending on the chosen model), everything runs on your computer. Your laptop could be in airplane mode and it would still work perfectly.'
+                                a: 'Yes. After you download the AI model once (100 MB to 10 GB depending on the chosen model), everything runs on your computer. Your laptop could be in airplane mode and it would still work perfectly.'
                             },
                             {
                                 q: 'How fast is it?',
@@ -905,15 +911,16 @@ const HomePage: React.FC = () => {
                             },
                             {
                                 q: 'What languages are supported?',
-                                a: 'Depends on the model. Multi-language Whisper models support 99 languages. Parakeet supports 25 European languages. English-only Whisper variants are optimized specifically for English and run faster. Pick the model that matches what you need.'
+                                a: 'Depends on the model. Multi-language Whisper models support 99 languages. Parakeet supports 25 European languages. Moonshine offers lightweight models for English, Arabic, Chinese, Japanese, Korean, Ukrainian, and Vietnamese. English-only Whisper variants are optimized specifically for English and run faster. Pick the model that matches what you need.'
                             },
                             {
                                 q: 'Will this work on my computer?',
                                 a: (
                                     <>
                                         If you're running Windows 10/11, yes. System requirements:
-                                        4GB RAM minimum (8GB+ recommended), 500MB free disk space.
-                                        Optional: NVIDIA GPU with CUDA support for faster
+                                        1GB RAM minimum with Moonshine models (4GB+ for larger
+                                        models), 100MB to 10GB free disk space depending on chosen
+                                        model. Optional: GPU with Vulkan support for faster
                                         transcription. macOS and Linux support are coming soon. For
                                         detailed requirements, see the{' '}
                                         <a
