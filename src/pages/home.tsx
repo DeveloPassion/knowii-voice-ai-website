@@ -286,9 +286,9 @@ const HomePage: React.FC = () => {
                                 Fast & Accurate
                             </h3>
                             <p className='text-primary/80'>
-                                Powered by state-of-the-art AI models (Whisper, Parakeet, Moonshine)
-                                with GPU acceleration support. Get near-instant transcriptions with
-                                remarkable accuracy.
+                                Powered by state-of-the-art AI models (Whisper, Parakeet,
+                                Omnilingual, Moonshine) with GPU acceleration support. Get
+                                near-instant transcriptions with remarkable accuracy.
                             </p>
                         </div>
 
@@ -299,9 +299,10 @@ const HomePage: React.FC = () => {
                             <p className='text-primary/80'>
                                 Need instant results? Use a tiny model. Need perfect accuracy? Use a
                                 large one. English-only? There's a faster model for that. 99
-                                languages? Covered. Low-end hardware? Moonshine models work great
-                                with minimal resources. Switch between models in seconds based on
-                                what you're doing right now.
+                                languages? Covered. 1,600+ languages? Omnilingual has you covered.
+                                Low-end hardware? Moonshine models work great with minimal
+                                resources. Switch between models in seconds based on what you're
+                                doing right now.
                             </p>
                         </div>
 
@@ -626,9 +627,10 @@ const HomePage: React.FC = () => {
                     <div className='text-primary/80 space-y-6 text-lg'>
                         <p>
                             Knowii Voice AI uses state-of-the-art speech recognition AI models such
-                            as <strong>Whisper</strong>, <strong>Parakeet</strong>, and{' '}
-                            <strong>Moonshine</strong>. The same technology that powers professional
-                            transcription services, but running locally on your computer.
+                            as <strong>Whisper</strong>, <strong>Parakeet</strong>,{' '}
+                            <strong>Omnilingual</strong>, and <strong>Moonshine</strong>. The same
+                            technology that powers professional transcription services, but running
+                            locally on your computer.
                         </p>
                         <p>
                             You download the model once (100 MB to 10 GB depending on which model
@@ -663,6 +665,10 @@ const HomePage: React.FC = () => {
                                 <li>
                                     <strong>English-only variants</strong> - Optimized for English,
                                     even faster
+                                </li>
+                                <li>
+                                    <strong>Omnilingual models</strong> - 1,600+ languages with
+                                    automatic detection
                                 </li>
                                 <li>
                                     <strong>Moonshine models</strong> - Ultra-lightweight, perfect
@@ -911,7 +917,7 @@ const HomePage: React.FC = () => {
                             },
                             {
                                 q: 'What languages are supported?',
-                                a: 'Depends on the model. Multi-language Whisper models support 99 languages. Parakeet supports 25 European languages. Moonshine offers lightweight models for English, Arabic, Chinese, Japanese, Korean, Ukrainian, and Vietnamese. English-only Whisper variants are optimized specifically for English and run faster. Pick the model that matches what you need.'
+                                a: 'Depends on the model. Omnilingual models support 1,600+ languages with automatic detection. Multi-language Whisper models support 99 languages. Parakeet supports 25 European languages. Moonshine offers lightweight models for English, Arabic, Chinese, Japanese, Korean, Ukrainian, and Vietnamese. English-only Whisper variants are optimized specifically for English and run faster. Pick the model that matches what you need.'
                             },
                             {
                                 q: 'Will this work on my computer?',
