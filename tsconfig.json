@@ -47,7 +47,6 @@
         "checkJs": false,
 
         /* Shadcn UI */
-        "baseUrl": ".",
         "paths": {
             "@/*": ["./src/*"]
         }

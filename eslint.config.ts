@@ -24,7 +24,7 @@ const config: Linter.Config[] = [
     {
         settings: {
             react: {
-                version: 'detect'
+                version: '19.2'
             }
         }
     },
