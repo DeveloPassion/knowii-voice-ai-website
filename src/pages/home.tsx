@@ -371,8 +371,8 @@ const HomePage: React.FC = () => {
                                 description:
                                     'You\'ve read the terms of service. You know what "we may use your data to improve our models" means. Your data is your data. On your machine. Under your control.'
                             }
-                        ].map((item, index) => (
-                            <div key={index} className='border-secondary border-l-4 pl-6'>
+                        ].map((item) => (
+                            <div key={item.title} className='border-secondary border-l-4 pl-6'>
                                 <h3 className='mb-3 text-xl font-bold'>{item.title}</h3>
                                 <p className='text-primary/80'>{item.description}</p>
                             </div>
@@ -491,9 +491,9 @@ const HomePage: React.FC = () => {
                                 description:
                                     "Try it for a month. If you don't love it, email me. I'll refund you, no questions asked."
                             }
-                        ].map((item, index) => (
+                        ].map((item) => (
                             <div
-                                key={index}
+                                key={item.title}
                                 className='bg-background/50 flex items-start gap-3 rounded-lg p-4 sm:gap-4 sm:p-5 md:p-6'
                             >
                                 <FaCheckCircle className='text-secondary mt-0.5 shrink-0 text-xl sm:text-2xl' />
@@ -590,9 +590,9 @@ const HomePage: React.FC = () => {
                                 title: 'Usage Statistics',
                                 description: 'Get statistics about your usage'
                             }
-                        ].map((item, index) => (
+                        ].map((item) => (
                             <div
-                                key={index}
+                                key={item.title}
                                 className='border-primary/10 bg-background/50 rounded-lg border p-4 sm:p-5'
                             >
                                 <h3 className='text-secondary mb-2 text-lg font-bold'>
@@ -972,9 +972,9 @@ const HomePage: React.FC = () => {
                                 q: 'How does this relate to your other products and services?',
                                 a: "Knowii Voice AI is part of a growing ecosystem of tools and services I'm building around the Knowii Community (https://www.store.dsebastien.net/l/knowii). This is how I build: interconnected systems that amplify the way you think and work. Voice AI helps you capture thoughts faster. The Knowii Community helps you organize and leverage that knowledge. The Knowledge Worker Kit (https://store.dsebastien.net/l/knowledge-worker-kit) gives you the frameworks to use it all effectively."
                             }
-                        ].map((item, index) => (
+                        ].map((item) => (
                             <div
-                                key={index}
+                                key={item.q}
                                 className='bg-background/50 rounded-lg p-4 sm:p-5 md:p-6'
                             >
                                 <h3 className='mb-2 text-lg font-bold sm:text-xl'>{item.q}</h3>

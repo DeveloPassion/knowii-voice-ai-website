@@ -1,8 +1,9 @@
 import { Link } from 'react-router'
 
-const Footer: React.FC = () => {
-    const currentYear = new Date().getFullYear()
+// Computed once at module load (not during render) to satisfy the render-purity rule.
+const currentYear = new Date().getFullYear()
 
+const Footer: React.FC = () => {
     return (
         <footer className='border-primary/10 bg-background border-t pt-12 pb-20 sm:pt-16 sm:pb-24 md:pt-20 md:pb-28 lg:pt-24 lg:pb-32'>
             <div className='xg:px-24 mx-auto max-w-7xl px-6 sm:px-10 md:px-16 lg:px-20 xl:px-32'>
