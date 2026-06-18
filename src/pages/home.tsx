@@ -1,6 +1,6 @@
 import Section from '@/components/ui/section'
 import CTAButton from '@/components/ui/cta-button'
-import { FaCheckCircle, FaWindows } from 'react-icons/fa'
+import { FaApple, FaCheckCircle, FaLinux, FaWindows } from 'react-icons/fa'
 
 const HomePage: React.FC = () => {
     return (
@@ -432,9 +432,8 @@ const HomePage: React.FC = () => {
                                 title: 'Full access to Knowii Voice AI',
                                 description: (
                                     <>
-                                        The Windows version is available immediately. Buy your copy.
-                                        Download today. Use it immediately. Linux and macOS versions
-                                        coming soon. See{' '}
+                                        Available for Windows, macOS, and Linux. Buy your copy.
+                                        Download today. Use it immediately. See{' '}
                                         <a
                                             href='https://docs.voice-ai.knowii.net/user-guide/installation#system-requirements'
                                             target='_blank'
@@ -535,14 +534,6 @@ const HomePage: React.FC = () => {
                     <div className='grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3'>
                         {[
                             {
-                                title: 'Linux support',
-                                description: 'Full feature parity for Linux users'
-                            },
-                            {
-                                title: 'macOS support',
-                                description: 'Full feature parity for Mac users'
-                            },
-                            {
                                 title: 'Support for more AI models',
                                 description:
                                     'More AI models will be added for local and remote transcription and post-processing'
@@ -591,9 +582,9 @@ const HomePage: React.FC = () => {
                                     'Uncompress. Run. Transcribe. Everything stored in one folder'
                             },
                             {
-                                title: 'CLI and API',
+                                title: 'API access',
                                 description:
-                                    'Integrate Knowii Voice AI with other applications and systems'
+                                    'Integrate Knowii Voice AI with other applications and systems (a transcribe CLI is already available)'
                             },
                             {
                                 title: 'Usage Statistics',
@@ -923,12 +914,12 @@ const HomePage: React.FC = () => {
                                 q: 'Will this work on my computer?',
                                 a: (
                                     <>
-                                        If you're running Windows 10/11, yes. System requirements:
-                                        1GB RAM minimum with Moonshine models (4GB+ for larger
-                                        models), 100MB to 10GB free disk space depending on chosen
-                                        model. Optional: GPU with Vulkan support for faster
-                                        transcription. macOS and Linux support are coming soon. For
-                                        detailed requirements, see the{' '}
+                                        Yes. Knowii Voice AI runs on Windows 10/11, macOS (Apple
+                                        Silicon and Intel), and Linux (.deb, AppImage, and .rpm).
+                                        System requirements: 1GB RAM minimum with Moonshine models
+                                        (4GB+ for larger models), 100MB to 10GB free disk space
+                                        depending on chosen model. Optional: GPU with Vulkan support
+                                        for faster transcription. For detailed requirements, see the{' '}
                                         <a
                                             href='https://docs.voice-ai.knowii.net/user-guide/installation#system-requirements'
                                             target='_blank'
@@ -1026,11 +1017,21 @@ const HomePage: React.FC = () => {
                     </div>
 
                     <div className='text-primary/70 space-y-2 text-sm'>
-                        <div className='flex items-center justify-center gap-2'>
-                            <FaWindows className='text-lg' />
-                            <span>Windows 10/11 version available now</span>
+                        <div className='flex items-center justify-center gap-4'>
+                            <span className='flex items-center gap-2'>
+                                <FaWindows className='text-lg' />
+                                Windows
+                            </span>
+                            <span className='flex items-center gap-2'>
+                                <FaApple className='text-lg' />
+                                macOS
+                            </span>
+                            <span className='flex items-center gap-2'>
+                                <FaLinux className='text-lg' />
+                                Linux
+                            </span>
                         </div>
-                        <p>Linux and macOS coming later</p>
+                        <p>Available now for Windows, macOS, and Linux</p>
                         <p>30-day money-back guarantee • Lifetime updates included</p>
                         <p className='text-xs'>Secure checkout via Gumroad</p>
                     </div>
