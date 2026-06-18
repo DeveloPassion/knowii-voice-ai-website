@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { HashRouter, Routes, Route } from 'react-router'
-import './styles/index.css'
 
 import AppLayout from './components/layout/app-layout'
 import HomePage from './pages/home'

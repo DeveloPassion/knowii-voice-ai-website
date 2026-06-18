@@ -4,22 +4,24 @@
 
 ### Prerequisites
 
-- Node.js 20 or later
-- npm 9 or later
+- [Bun](https://bun.com/) 1.3 or later (used for installing, building, running and testing)
 
 ### Installation
 
 ```bash
-npm install
+bun install
+bun run setup   # wires up the Git config-based hooks (one time per clone)
 ```
 
 ### Development Server
 
 ```bash
-npm run dev
+bun run dev
 ```
 
-The site will be available at `http://localhost:5173` (default Vite port).
+The site will be available at `http://localhost:5173`. Bun bundles the app and
+rebuilds automatically when files under `src/` change. Set `PORT` to use a
+different port.
 
 ## Development Workflow
 
@@ -28,13 +30,13 @@ The site will be available at `http://localhost:5173` (default Vite port).
 Always run type checking before committing:
 
 ```bash
-npm run tsc
+bun run tsc
 ```
 
 For continuous type checking during development:
 
 ```bash
-npm run tsc:watch
+bun run tsc:watch
 ```
 
 ### 2. Linting
@@ -42,7 +44,7 @@ npm run tsc:watch
 Check code quality:
 
 ```bash
-npm run lint
+bun run lint
 ```
 
 ### 3. Formatting
@@ -50,27 +52,45 @@ npm run lint
 Format all code:
 
 ```bash
-npm run format
+bun run format
 ```
 
 Note: Prettier will also run automatically on commit via the pre-commit hook.
 
-### 4. Building
+### 4. Testing
+
+Run the test suite (powered by `bun test`):
+
+```bash
+bun test
+```
+
+### 5. Validating
+
+Run type checking, tests and linting together:
+
+```bash
+bun run validate
+```
+
+### 6. Building
 
 Build for production:
 
 ```bash
-npm run build
+bun run build
 ```
 
-The build output will be in the `dist/` directory.
+The build output will be in the `dist/` directory. The build runs `tsc` first,
+then `bun scripts/build.ts --prod`, which bundles the JS with Bun, compiles the
+CSS with the Tailwind CLI, copies `public/` and emits a production `index.html`.
 
-### 5. Preview
+### 7. Preview
 
 Preview the production build locally:
 
 ```bash
-npm run preview
+bun run preview
 ```
 
 ## Project Structure
@@ -79,16 +99,27 @@ npm run preview
 knowii-voice-ai-website/
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml          # GitHub Actions deployment
+│       ├── ci.yml              # Type check, lint, test, format, build
+│       ├── deploy.yml          # GitHub Actions deployment
+│       └── release.yml         # GitHub release creation
+├── public/
+│   └── assets/
+│       ├── images/            # Logo, icons, photos
+│       └── screenshots/       # Product screenshots
+├── scripts/
+│   ├── build.ts               # Bun build orchestration
+│   ├── build.spec.ts          # Build script tests
+│   ├── dev.ts                 # Dev server (build + watch + serve)
+│   ├── serve.ts               # Static preview server
+│   └── git-hooks/
+│       └── format-staged.sh   # Pre-commit Prettier formatting
 ├── src/
-│   ├── assets/
-│   │   ├── images/            # Logo, icons, photos
-│   │   └── screenshots/       # Product screenshots
 │   ├── components/
 │   │   ├── layout/            # Layout components (Header, Footer, AppLayout)
 │   │   └── ui/                # Reusable UI components
 │   ├── lib/
-│   │   └── utils.ts           # Utility functions (cn for classnames)
+│   │   ├── utils.ts           # Utility functions (cn for classnames)
+│   │   └── utils.spec.ts      # Utility tests
 │   ├── pages/                 # Page components
 │   │   ├── home.tsx
 │   │   ├── privacy-policy.tsx
@@ -96,23 +127,20 @@ knowii-voice-ai-website/
 │   ├── styles/
 │   │   └── index.css          # Global styles & Tailwind imports
 │   ├── index.html             # HTML entry point
-│   ├── main.tsx               # React entry point
-│   └── vite-env.d.ts          # Vite TypeScript definitions
+│   └── main.tsx               # React entry point
 ├── documentation/             # Documentation and sales copy
 ├── .editorconfig
+├── .gitconfig                 # Git config-based hooks (Git 2.54+)
 ├── .gitignore
 ├── .prettierignore
-├── .release-it.js            # Release configuration
-├── CLAUDE.MD                  # Project documentation for Claude
 ├── AGENTS.md                  # Agent instructions
 ├── DEVELOPMENT.md             # This file
-├── commitlint.config.cjs     # Commit message linting
-├── eslint.config.js          # ESLint configuration
+├── bunfig.toml                # Bun configuration
+├── commitlint.config.ts       # Commit message linting
+├── eslint.config.ts           # ESLint configuration
 ├── package.json
-├── prettier.config.js        # Prettier configuration
-├── tsconfig.json             # TypeScript configuration
-├── tsconfig.node.json        # TypeScript config for build tools
-└── vite.config.ts            # Vite configuration
+├── prettier.config.cjs        # Prettier configuration
+└── tsconfig.json              # TypeScript configuration
 ```
 
 ## Git Workflow
@@ -170,15 +198,18 @@ chore(deps): update react to v19
 For interactive commit message creation:
 
 ```bash
-npm run commit
+bun run commit
 ```
 
-### Pre-commit Hooks
+### Git Hooks
+
+This project uses Git 2.54+ config-based hooks (defined in `.gitconfig`), enabled
+once per clone with `bun run setup`. They replace the previous husky setup.
 
 The pre-commit hook automatically:
 
-- Formats code with Prettier
-- Stages formatted files
+- Formats staged files with Prettier (`scripts/git-hooks/format-staged.sh`)
+- Re-stages the formatted files
 
 The commit-msg hook validates commit messages against Conventional Commits format.
 
@@ -200,26 +231,25 @@ None
 
 ### Build Fails
 
-1. Check TypeScript errors: `npm run tsc`
-2. Check ESLint errors: `npm run lint`
-3. Clear node_modules and reinstall: `rm -rf node_modules && npm install`
-4. Clear Vite cache: `rm -rf node_modules/.vite`
+1. Check TypeScript errors: `bun run tsc`
+2. Check ESLint errors: `bun run lint`
+3. Clear node_modules and reinstall: `rm -rf node_modules && bun install`
 
 ### Styles Not Applying
 
 1. Check Tailwind configuration in `src/styles/index.css`
-2. Ensure `@tailwindcss/vite` plugin is loaded in `vite.config.ts`
+2. The CSS is compiled by the Tailwind CLI in `scripts/build.ts`
 3. Restart the dev server
 
 ### Images Not Loading
 
-1. Verify images are in `src/assets/`
+1. Verify images are in `public/assets/`
 2. Check paths start with `/assets/` (not `./assets/` or `../assets/`)
 3. Ensure images are referenced correctly in components
 
 ## Resources
 
-- [Vite Documentation](https://vitejs.dev/)
+- [Bun Documentation](https://bun.com/docs)
 - [React Documentation](https://react.dev/)
 - [Tailwind CSS Documentation](https://tailwindcss.com/)
 - [React Router Documentation](https://reactrouter.com/)

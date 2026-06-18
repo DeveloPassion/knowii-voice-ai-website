@@ -14,7 +14,8 @@ const config: Linter.Config[] = [
         languageOptions: {
             globals: {
                 ...globals.browser,
-                ...globals.node
+                ...globals.node,
+                Bun: 'readonly'
             }
         }
     },

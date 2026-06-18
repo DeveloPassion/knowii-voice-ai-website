@@ -1,0 +1,15 @@
+telemetry = false
+
+[install]
+exact = true
+# @tailwindcss/cli pulls in @parcel/watcher, which require()s a platform-specific
+# prebuilt at module load. Keep optional dependencies enabled so the CSS build
+# does not crash with "No prebuild or local build of @parcel/watcher found".
+optional = true
+
+[run]
+# Run scripts with Bun's runtime (equivalent to `bun --bun`).
+bun = true
+
+[test]
+coverage = false

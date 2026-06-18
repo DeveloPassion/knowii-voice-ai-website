@@ -49,7 +49,7 @@ This project uses a **strict TypeScript configuration**. Always ensure your code
 **ALWAYS run TypeScript in watch mode in the background when working on this project:**
 
 ```bash
-npm run tsc:watch
+bun run tsc:watch
 ```
 
 This runs `tsc --noEmit --watch` which:
@@ -71,7 +71,7 @@ This runs `tsc --noEmit --watch` which:
 Use this to verify code compiles correctly without building:
 
 ```bash
-npm run tsc
+bun run tsc
 ```
 
 This runs `tsc --noEmit` which:
@@ -92,7 +92,7 @@ This runs `tsc --noEmit` which:
 **ALWAYS** run when making changes to pages or components:
 
 ```bash
-npm run build
+bun run build
 ```
 
 **When to use:**
@@ -107,14 +107,14 @@ This project enforces consistent code formatting.
 
 #### Automatic Formatting (Pre-commit Hook)
 
-A pre-commit hook automatically formats code before each commit using Prettier via `lint-staged`.
+A pre-commit hook automatically formats staged files with Prettier before each commit. The hooks are Git 2.54+ config-based hooks (defined in `.gitconfig`, enabled per clone with `bun run setup`).
 
 #### Manual Formatting
 
 **ALWAYS** run after making changes to ensure consistent formatting:
 
 ```bash
-npm run format
+bun run format
 ```
 
 ### Linting
@@ -126,7 +126,7 @@ This project enforces code quality and conventions through ESLint.
 **ALWAYS** run after making TypeScript changes:
 
 ```bash
-npm run lint
+bun run lint
 ```
 
 **Must exit with zero errors before committing**
@@ -149,13 +149,13 @@ The website is automatically deployed to GitHub Pages on every push to the `main
 **IMPORTANT**: The `public/` folder contains static assets (images, icons, screenshots) that must be committed to the repository.
 
 - **Location**: `public/assets/`
-- **Purpose**: Static assets that Vite copies to `dist/` during build
+- **Purpose**: Static assets that the build copies to `dist/`
 - **Must be in git**: The `public/` folder is NOT in `.gitignore` and must be committed
 - **Why**: GitHub Actions needs these assets during the build process
 
-During the Vite build:
+During the build (`scripts/build.ts`):
 
-1. Vite copies contents of `public/` to `dist/` (via `publicDir: '../public'` in vite.config.ts)
+1. The build copies the contents of `public/` to `dist/`
 2. Assets are then available in the deployed site at `/assets/...` paths
 
 **When adding new assets:**
@@ -168,9 +168,9 @@ During the Vite build:
 ### Deployment Process
 
 1. Push to `main` branch
-2. GitHub Actions workflow builds the site (`npm run build`)
-    - Vite copies `public/` contents to `dist/`
-    - Vite processes and bundles the application code
+2. GitHub Actions workflow builds the site (`bun run build`)
+    - The build copies `public/` contents to `dist/`
+    - Bun bundles the application code and the Tailwind CLI compiles the CSS
 3. Workflow copies `dist/` to a temporary `public/` for deployment artifact
 4. Workflow deploys the artifact to GitHub Pages
 5. Site is available at https://voice-ai.knowii.net
