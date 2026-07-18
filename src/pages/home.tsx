@@ -328,6 +328,18 @@ const HomePage: React.FC = () => {
                                 languages and capabilities.
                             </p>
                         </div>
+
+                        <div className='bg-background/80 rounded-lg p-4 sm:p-5 md:p-6'>
+                            <h3 className='text-secondary mb-2 text-xl font-bold sm:text-2xl'>
+                                Rock-Solid Reliability
+                            </h3>
+                            <p className='text-primary/80'>
+                                Built to keep working, no matter what. It recovers on its own if
+                                your microphone drops out, never gets stuck mid-transcription, and
+                                tells you clearly when something needs your attention. It just keeps
+                                going.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </Section>
