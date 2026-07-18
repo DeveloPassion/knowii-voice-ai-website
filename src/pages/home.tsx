@@ -294,6 +294,18 @@ const HomePage: React.FC = () => {
 
                         <div className='bg-background/80 rounded-lg p-4 sm:p-5 md:p-6'>
                             <h3 className='text-secondary mb-2 text-xl font-bold sm:text-2xl'>
+                                Cleaner Transcriptions
+                            </h3>
+                            <p className='text-primary/80'>
+                                Teach it your vocabulary. Fix names and acronyms that always come
+                                out wrong, even across languages and alphabets. Automatically strip
+                                out "um" and "uh". Get polished text that sounds like you meant to
+                                write it.
+                            </p>
+                        </div>
+
+                        <div className='bg-background/80 rounded-lg p-4 sm:p-5 md:p-6'>
+                            <h3 className='text-secondary mb-2 text-xl font-bold sm:text-2xl'>
                                 Many AI Models. Your Choice.
                             </h3>
                             <p className='text-primary/80'>
