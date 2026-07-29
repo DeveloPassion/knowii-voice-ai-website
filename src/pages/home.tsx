@@ -283,6 +283,17 @@ const HomePage: React.FC = () => {
 
                         <div className='bg-background/80 rounded-lg p-4 sm:p-5 md:p-6'>
                             <h3 className='text-secondary mb-2 text-xl font-bold sm:text-2xl'>
+                                Fits Your Setup
+                            </h3>
+                            <p className='text-primary/80'>
+                                Start and stop dictation from a single command, so it plugs straight
+                                into a panel button, a window manager keybinding, or a script. Wire
+                                it up however you work.
+                            </p>
+                        </div>
+
+                        <div className='bg-background/80 rounded-lg p-4 sm:p-5 md:p-6'>
+                            <h3 className='text-secondary mb-2 text-xl font-bold sm:text-2xl'>
                                 Fast & Accurate
                             </h3>
                             <p className='text-primary/80'>
