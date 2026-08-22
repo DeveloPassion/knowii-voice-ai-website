@@ -363,6 +363,19 @@ const HomePage: React.FC = () => {
                                 going.
                             </p>
                         </div>
+
+                        <div className='bg-background/80 rounded-lg p-4 sm:p-5 md:p-6'>
+                            <h3 className='text-secondary mb-2 text-xl font-bold sm:text-2xl'>
+                                Works From Your Terminal
+                            </h3>
+                            <p className='text-primary/80'>
+                                A <code>transcribe</code> command ships with the app. Turn meeting
+                                recordings, interviews and podcasts into subtitles or plain text,
+                                one file or a whole folder at a time. Same engines, same models,
+                                still offline. Put it in a script and your backlog transcribes
+                                itself.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </Section>
@@ -602,9 +615,9 @@ const HomePage: React.FC = () => {
                                     "Disable noise while you're recording to get the best possible transcriptions"
                             },
                             {
-                                title: 'File transcription',
+                                title: 'File transcription in the app',
                                 description:
-                                    'Drag and drop audio files (meeting recordings, interviews, podcasts) to transcribe them'
+                                    'Drag and drop audio files into the window to transcribe them. Already possible today from the terminal with the transcribe CLI'
                             },
                             {
                                 title: 'Internationalization',
@@ -619,7 +632,7 @@ const HomePage: React.FC = () => {
                             {
                                 title: 'API access',
                                 description:
-                                    'Integrate Knowii Voice AI with other applications and systems (a transcribe CLI is already available)'
+                                    'Integrate Knowii Voice AI with other applications and systems programmatically'
                             },
                             {
                                 title: 'Usage Statistics',
