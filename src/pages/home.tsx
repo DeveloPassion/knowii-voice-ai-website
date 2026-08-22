@@ -305,8 +305,10 @@ const HomePage: React.FC = () => {
                             </h3>
                             <p className='text-primary/80'>
                                 Powered by state-of-the-art AI models (Whisper, Parakeet,
-                                Omnilingual, Moonshine) with GPU acceleration support. Get
-                                near-instant transcriptions with remarkable accuracy.
+                                Omnilingual, Moonshine) with GPU acceleration support. Turn on
+                                instant transcription and your words are processed while you speak —
+                                the text is ready the moment you stop, even after minutes of
+                                dictation.
                             </p>
                         </div>
 
