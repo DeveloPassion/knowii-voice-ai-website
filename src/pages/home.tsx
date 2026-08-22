@@ -366,14 +366,14 @@ const HomePage: React.FC = () => {
 
                         <div className='bg-background/80 rounded-lg p-4 sm:p-5 md:p-6'>
                             <h3 className='text-secondary mb-2 text-xl font-bold sm:text-2xl'>
-                                Works From Your Terminal
+                                Transcribes Your Files Too
                             </h3>
                             <p className='text-primary/80'>
-                                A <code>transcribe</code> command ships with the app. Turn meeting
-                                recordings, interviews and podcasts into subtitles or plain text,
-                                one file or a whole folder at a time. Same engines, same models,
-                                still offline. Put it in a script and your backlog transcribes
-                                itself.
+                                Drop meeting recordings, interviews or videos onto the window and
+                                they land in your history as text. Need more? A{' '}
+                                <code>transcribe</code> command ships with the app: subtitles or
+                                plain text, one file or a whole folder at a time. Same engines, same
+                                models, still offline.
                             </p>
                         </div>
                     </div>
@@ -613,11 +613,6 @@ const HomePage: React.FC = () => {
                                 title: 'Mute/Pause Media while recording',
                                 description:
                                     "Disable noise while you're recording to get the best possible transcriptions"
-                            },
-                            {
-                                title: 'File transcription in the app',
-                                description:
-                                    'Drag and drop audio files into the window to transcribe them. Already possible today from the terminal with the transcribe CLI'
                             },
                             {
                                 title: 'Internationalization',
