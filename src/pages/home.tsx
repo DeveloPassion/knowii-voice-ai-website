@@ -12,7 +12,8 @@ const HomePage: React.FC = () => {
                         You Think Faster Than You Type
                     </h1>
                     <p className='text-primary/80 mb-8 text-xl sm:mb-10 sm:text-2xl md:text-3xl lg:mb-12'>
-                        Press. Speak. Release. Your words appear exactly where you need them.
+                        Press. Speak. Release. Your words appear exactly where you need them — the
+                        moment you stop.
                     </p>
                     <p className='text-primary/70 mb-6 text-lg sm:mb-8 sm:text-xl'>
                         Works in every app. Runs on your computer. Costs $49, one time.
@@ -367,8 +368,9 @@ const HomePage: React.FC = () => {
                             </h3>
                             <p className='text-primary/80'>
                                 Built to keep working, no matter what. It recovers on its own if
-                                your microphone drops out, never gets stuck mid-transcription, and
-                                tells you clearly when something needs your attention. It just keeps
+                                your microphone drops out, never gets stuck mid-transcription,
+                                handles dictations of any length without losing a word, and tells
+                                you clearly when something needs your attention. It just keeps
                                 going.
                             </p>
                         </div>
