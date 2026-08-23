@@ -207,7 +207,14 @@ const HomePage: React.FC = () => {
                         </div>
                         <div className='overflow-hidden rounded-lg shadow-xl transition-transform hover:scale-[1.02] lg:shadow-2xl'>
                             <img
-                                src='/assets/screenshots/2025-11-03-settings-general.png'
+                                src='/assets/screenshots/2026-08-23-instant-transcription.png'
+                                alt='Advanced settings with instant transcription enabled: the app transcribes at natural pauses while you speak'
+                                className='h-full w-full object-contain'
+                            />
+                        </div>
+                        <div className='overflow-hidden rounded-lg shadow-xl transition-transform hover:scale-[1.02] lg:shadow-2xl'>
+                            <img
+                                src='/assets/screenshots/2026-08-23-settings-general.png'
                                 alt='Knowii Voice AI Settings'
                                 className='h-full w-full object-contain'
                             />
