@@ -309,6 +309,18 @@ const HomePage: React.FC = () => {
 
                         <div className='bg-background/80 rounded-lg p-4 sm:p-5 md:p-6'>
                             <h3 className='text-secondary mb-2 text-xl font-bold sm:text-2xl'>
+                                Yours to Extend
+                            </h3>
+                            <p className='text-primary/80'>
+                                Hand every transcription to a script you write before it is pasted.
+                                Clean up the wording your way, run it through a local AI, or send it
+                                somewhere else entirely. It runs on your machine, and if it ever
+                                fails your original text is pasted untouched.
+                            </p>
+                        </div>
+
+                        <div className='bg-background/80 rounded-lg p-4 sm:p-5 md:p-6'>
+                            <h3 className='text-secondary mb-2 text-xl font-bold sm:text-2xl'>
                                 Fast & Accurate
                             </h3>
                             <p className='text-primary/80'>
