@@ -208,7 +208,7 @@ const HomePage: React.FC = () => {
                         <div className='overflow-hidden rounded-lg shadow-xl transition-transform hover:scale-[1.02] lg:shadow-2xl'>
                             <img
                                 src='/assets/screenshots/2026-08-23-instant-transcription.png'
-                                alt='Advanced settings with instant transcription enabled: the app transcribes at natural pauses while you speak'
+                                alt='Advanced settings with Transcribe while recording enabled: the app transcribes at natural pauses while you speak, so the wait after you stop is short'
                                 className='h-full w-full object-contain'
                             />
                         </div>
@@ -326,8 +326,8 @@ const HomePage: React.FC = () => {
                             <p className='text-primary/80'>
                                 Powered by state-of-the-art AI models (Whisper, Parakeet,
                                 Omnilingual, Moonshine) with GPU acceleration support. Turn on
-                                instant transcription and your words are processed while you speak —
-                                the text is ready the moment you stop, even after minutes of
+                                transcribe-while-recording and your words are processed while you
+                                speak — the text is ready the moment you stop, even after minutes of
                                 dictation.
                             </p>
                         </div>
