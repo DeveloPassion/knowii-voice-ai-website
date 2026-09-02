@@ -622,9 +622,9 @@ const HomePage: React.FC = () => {
                                     'Apply custom transformations to your transcriptions: remove filler words, fix commonly misrecognized words, use AI. Configure AI-enabled pipelines, detect applications/context and go from raw transcriptions to specialized outputs'
                             },
                             {
-                                title: 'Live transcription',
+                                title: 'Live dictation',
                                 description:
-                                    'See words appear in real-time as you speak, not after you finish'
+                                    'Your words appear in the window you are working in while you speak, chunk by chunk at the natural pauses, instead of all at once when you stop. Landing in the next release'
                             },
                             {
                                 title: 'Voice Trigger Words/Phrases',
@@ -706,9 +706,10 @@ const HomePage: React.FC = () => {
                             required. No cloud API. No sending your data anywhere.
                         </p>
                         <p>
-                            If your computer has an NVIDIA GPU, transcription is accelerated and
-                            near-instant. If you're on CPU-only, it takes a few seconds. Still fast
-                            enough to be useful.
+                            If your computer has a graphics card with Vulkan (Linux, Windows) or
+                            Metal (macOS) — NVIDIA, AMD or Intel — Whisper, Moonshine and Parakeet
+                            V3 (GPU) run on it and transcription is near-instant. On CPU only, it
+                            takes a few seconds. Still fast enough to be useful.
                         </p>
                         <div className='bg-background/50 rounded-lg p-6'>
                             <p className='mb-4 font-semibold'>
