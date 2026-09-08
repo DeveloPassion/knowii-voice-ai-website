@@ -6,6 +6,11 @@ exact = true
 # prebuilt at module load. Keep optional dependencies enabled so the CSS build
 # does not crash with "No prebuild or local build of @parcel/watcher found".
 optional = true
+# Only install package versions published at least 3 days ago
+minimumReleaseAge = 259200
+# bun-types is @types/bun's transitive payload -- excluding one without the
+# other deadlocks installs whenever a fresh Bun ships.
+minimumReleaseAgeExcludes = ["@types/bun", "bun-types", "typescript"]
 
 [run]
 # Run scripts with Bun's runtime (equivalent to `bun --bun`).
