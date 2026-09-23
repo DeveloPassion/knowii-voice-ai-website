@@ -627,6 +627,11 @@ const HomePage: React.FC = () => {
                                     'Your words appear in the window you are working in while you speak, chunk by chunk at the natural pauses, instead of all at once when you stop. Landing in the next release'
                             },
                             {
+                                title: 'Speak into your Obsidian vault (beta)',
+                                description:
+                                    "A capture shortcut that saves what you say as a new note or a line in today's daily note, with Obsidian closed and nothing to install. Landing in the next release"
+                            },
+                            {
                                 title: 'Voice Trigger Words/Phrases',
                                 description:
                                     'Keyboard-less mode where a trigger word or phrase initiates recording and transcription'
